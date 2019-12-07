@@ -14,7 +14,7 @@ public class TestMyBatis {
 
     @Test
     public void run1() throws IOException {
-        Account account =new Account();
+        test.Account account =new Account();
         account.setId(11);
         account.setName("杜永蓝");
         account.setMoney(200d);

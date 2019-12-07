@@ -12,6 +12,12 @@
 	http://www.springframework.org/schema/aop/spring-aop.xsd
 	http://www.springframework.org/schema/tx
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--这里是spring 框架的配置-->
+    <!-- 开启spring扫描注解, 可以用注解向 serviceiml包中注入javabean-->
+    <!--整合mybatis,用注入方式设置了 数据源 需要扫描的dao包  SqlSessionFactory工厂
+        事务管理-->
+
+
 
     <!--开启注解的扫描，希望处理service和dao，controller不需要Spring框架去处理-->
     <context:component-scan base-package="serviceiml" >
@@ -23,13 +29,14 @@
     <!--配置连接池-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-        <property name="jdbcUrl" value="jdbc:sqlserver://localhost:1433;DatabaseName=DEMO"/>
+        <property name="jdbcUrl" value="jdbc:sqlserver://localhost:1433;DatabaseName=bbs"/>
         <property name="user" value="SA"/>
         <property name="password" value="sa"/>
     </bean>
     <!--配置SqlSessionFactory工厂-->
     <bean id="sqlSessonFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:/mapper/*.xml"></property>
     </bean>
     <!--配置IAccountdao接口所在包-->
     <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">

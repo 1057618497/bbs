@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="FInakWork:war exploded" />
+      <artifact name="FinakWork:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -19,9 +19,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Tag Library Descriptor" />
-        <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="XSLT Stylesheet" />
+        <option value="FxmlFile" />
+        <option value="Tag Library Descriptor" />
         <option value="Class" />
       </list>
     </option>
@@ -49,11 +51,15 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\桌面\实验\web程序设计\大作业\FInakWork\src\main\resources" />
       <recent name="D:\桌面\实验\web程序设计\大作业\FInakWork\src\main\resources\spring" />
@@ -71,9 +77,71 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Finalwork">
-    <configuration name="TestMyBatis.run1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FInakWork" />
+  <component name="RunManager" selected="JUnit.TestITopicDao.testInsertTopic">
+    <configuration name="TestAccountDao.testInsertAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalWork" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestAccountDao" />
+      <option name="METHOD_NAME" value="testInsertAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestITopicDao.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestITopicDao" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestITopicDao.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalWork" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestITopicDao" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestITopicDao.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalWork" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestITopicDao" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestITopicDao.testInsertTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestITopicDao" />
+      <option name="METHOD_NAME" value="testInsertTopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMyBatis.run1" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="FinalWork" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestMyBatis" />
       <option name="METHOD_NAME" value="run1" />
@@ -82,24 +150,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSpring.run1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FInakWork" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSpring" />
-      <option name="METHOD_NAME" value="run1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Finalwork" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="FInalWork" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/FInalWork" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
-        <artifact name="FInakWork:war exploded">
+        <artifact name="FinakWork:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/FInakWork" />
+            <option name="CONTEXT_PATH" value="/FInalWork" />
           </settings>
         </artifact>
       </deployment>
@@ -162,7 +222,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="FInakWork:war exploded" />
+          <artifact name="FinakWork:war exploded" />
         </option>
       </method>
     </configuration>
@@ -300,10 +360,23 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.TestMyBatis.run1" />
+      <item itemvalue="JUnit.TestITopicDao.test1" />
+      <item itemvalue="JUnit.TestITopicDao.testInsertTopic" />
+      <item itemvalue="JUnit.TestITopicDao.test2" />
+      <item itemvalue="JUnit.TestAccountDao.testInsertAccount" />
+      <item itemvalue="JUnit.TestITopicDao.test3" />
+      <item itemvalue="Tomcat Server.FInalWork" />
+      <item itemvalue="Tomcat Server.index.jsp" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestMyBatis.run1" />
-        <item itemvalue="JUnit.TestSpring.run1" />
+        <item itemvalue="JUnit.TestITopicDao.testInsertTopic" />
+        <item itemvalue="JUnit.TestITopicDao.test3" />
+        <item itemvalue="JUnit.TestAccountDao.testInsertAccount" />
+        <item itemvalue="JUnit.TestITopicDao.test2" />
+        <item itemvalue="JUnit.TestITopicDao.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -328,11 +401,43 @@
       <workItem from="1575295298138" duration="619000" />
       <workItem from="1575295944969" duration="2688000" />
       <workItem from="1575335100223" duration="1159000" />
-      <workItem from="1575362002721" duration="1071000" />
+      <workItem from="1575362002721" duration="2338000" />
+      <workItem from="1575440064310" duration="4047000" />
+      <workItem from="1575461817454" duration="1676000" />
+      <workItem from="1575463972158" duration="2188000" />
+      <workItem from="1575506824387" duration="2393000" />
+      <workItem from="1575551389656" duration="2948000" />
+      <workItem from="1575598084438" duration="3007000" />
+      <workItem from="1575601235057" duration="459000" />
+      <workItem from="1575601720866" duration="3094000" />
+      <workItem from="1575620488202" duration="745000" />
+      <workItem from="1575622141927" duration="3155000" />
+      <workItem from="1575629153821" duration="4370000" />
+      <workItem from="1575633554555" duration="234000" />
+      <workItem from="1575634489734" duration="168000" />
+      <workItem from="1575634681609" duration="7783000" />
+      <workItem from="1575642545671" duration="554000" />
+      <workItem from="1575643125460" duration="352000" />
+      <workItem from="1575643501470" duration="860000" />
+      <workItem from="1575681587442" duration="702000" />
+      <workItem from="1575682317386" duration="2762000" />
+      <workItem from="1575685268535" duration="4381000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="t" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FinalWork$TestITopicDao_test1.ic" NAME="TestITopicDao.test1 Coverage Results" MODIFIED="1575640306469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>testDao.*</FILTER>
+    </SUITE>
   </component>
 </project>

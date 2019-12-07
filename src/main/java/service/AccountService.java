@@ -10,4 +10,9 @@ public interface AccountService {
 
     // 保存帐户信息
     public void saveAccount(Account account);
+
+    //获得一个账户
+    public vo.Account getAccount(String name);
+
+
 }

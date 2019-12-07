@@ -1,6 +1,6 @@
 package dao;
-
-import test.Account;
+import vo.*;
+//import test.Account;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
@@ -11,7 +11,11 @@ import java.util.List;
 public interface IAccountdao {
 
     @Select("select * from account")
-    public List<Account> findAll();
+    public List<test.Account> findAll();
     @Insert("insert into account (id,name,money) values(#{id},#{name},#{money})")
-    public void saveAccount(Account account);
+    public void saveAccount(test.Account account);
+   @Select("select * from accounts where name= #{name}")
+    public vo.Account getAccount(String name);
+
+    public Account insertAccount(Account a);
 }
