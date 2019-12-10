@@ -11,8 +11,8 @@
 
 <head>
 
-    <link rel="stylesheet" type="text/css" href="/FInalWork/css/style_1_common.css" >
-    <link rel="stylesheet" type="text/css" href="/FInalWork/css/style_1_forum_forumdisplay.css">
+    <link rel="stylesheet" type="text/css" href="/bbs/css/style_1_common.css" >
+    <link rel="stylesheet" type="text/css" href="/bbs/css/style_1_forum_forumdisplay.css">
     <script type="text/javascript">
         var STYLEID = '1',
             STATICURL = 'static/',

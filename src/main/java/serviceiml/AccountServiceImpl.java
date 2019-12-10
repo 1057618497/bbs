@@ -1,7 +1,8 @@
 package serviceiml;
 import dao.IAccountdao;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import test.Account;
+import vo.Account;
 import service.AccountService;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -12,20 +13,16 @@ public class AccountServiceImpl implements AccountService {
     private IAccountdao iaccountdao;
 
 
-    @Override
-    public List<test.Account> findAll() {
-        System.out.println("Service业务层：查询所有账户...");
-        return iaccountdao.findAll();
-    }
 
-    @Override
-    public void saveAccount(Account account) {
-        System.out.println("Service业务层：保存帐户...");
-    }
+
+
 
     @Override
     public vo.Account getAccount(String name) {
         System.out.println("service is running!");
         return iaccountdao.getAccount(name);
     }
+
+
+
 }

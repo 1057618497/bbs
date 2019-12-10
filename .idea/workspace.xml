@@ -6,7 +6,76 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8a1df7d-5c77-467f-8066-3e3d19413524" name="Default Changelist" comment="" />
+    <list default="true" id="c8a1df7d-5c77-467f-8066-3e3d19413524" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/IProfileDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/daoiml/ProfileDaoIml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/HomePageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/serviceiml/HomePageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/serviceiml/ProfileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/serviceiml/TopicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vo/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vo/Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vo/TopicView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/topic.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestHPService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IAccountdao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IAccountdao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IReplyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IReplyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ITopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ITopicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TopicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serviceiml/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serviceiml/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vo/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vo/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vo/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vo/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bbs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bbs.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/folder_new.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/folder_new.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/pin_1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/pin_1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/pn_post.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/pn_post.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestMyBatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestMyBatis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IAccountdao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IAccountdao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IReplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IReplyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/ITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/ITopicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/ProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/TopicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/spring/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/spring/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Topic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Topic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/bbs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/bbs.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/images/folder_new.gif" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/images/folder_new.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/images/pin_1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/images/pin_1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/images/pn_post.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/images/pn_post.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/IAccountdao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IAccountdao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/IReplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IReplyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/ITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ITopicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/TopicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serviceiml/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceiml/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vo/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vo/Topic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/Topic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestMyBatis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestMyBatis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestSpring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestSpring.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,14 +88,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Jsp File" />
         <option value="XSLT Stylesheet" />
         <option value="FxmlFile" />
         <option value="Tag Library Descriptor" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -48,10 +120,13 @@
     </option>
   </component>
   <component name="ProjectId" id="1UPJSR1ZZ6jwVXXYVZrXXufzQtc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -77,64 +152,58 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestITopicDao.testInsertTopic">
-    <configuration name="TestAccountDao.testInsertAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalWork" />
+  <component name="RunManager" selected="Tomcat Server.FInalWork">
+    <configuration name="AccountServiceImpl.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceiml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceiml" />
+      <option name="MAIN_CLASS_NAME" value="serviceiml.AccountServiceImpl" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAccountDao.testInsertsAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aid" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestAccountDao" />
-      <option name="METHOD_NAME" value="testInsertAccount" />
+      <option name="METHOD_NAME" value="testInsertsAccount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestITopicDao.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="TestAccountDao.testSelectAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aid" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestITopicDao" />
+      <option name="MAIN_CLASS_NAME" value="TestAccountDao" />
+      <option name="METHOD_NAME" value="testSelectAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAccountDao.testgetProfileBytid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestAccountDao" />
+      <option name="METHOD_NAME" value="testgetProfileBytid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHPService.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestHPService" />
       <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestITopicDao.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalWork" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestITopicDao" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestITopicDao.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalWork" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestITopicDao" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestITopicDao.testInsertTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestITopicDao" />
-      <option name="METHOD_NAME" value="testInsertTopic" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,7 +228,7 @@
       <deployment>
         <artifact name="FinakWork:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/FInalWork" />
+            <option name="CONTEXT_PATH" value="/bbss" />
           </settings>
         </artifact>
       </deployment>
@@ -288,6 +357,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="bbs-git" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/bbs" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="aid:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/bbs" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_bbs" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="1229" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="aid:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/views/index.jsp" />
       <deployment>
@@ -362,21 +505,22 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMyBatis.run1" />
-      <item itemvalue="JUnit.TestITopicDao.test1" />
-      <item itemvalue="JUnit.TestITopicDao.testInsertTopic" />
-      <item itemvalue="JUnit.TestITopicDao.test2" />
-      <item itemvalue="JUnit.TestAccountDao.testInsertAccount" />
-      <item itemvalue="JUnit.TestITopicDao.test3" />
+      <item itemvalue="JUnit.TestAccountDao.testSelectAccount" />
+      <item itemvalue="JUnit.AccountServiceImpl.test" />
+      <item itemvalue="JUnit.TestAccountDao.testInsertsAccount" />
+      <item itemvalue="JUnit.TestAccountDao.testgetProfileBytid" />
+      <item itemvalue="JUnit.TestHPService.test1" />
+      <item itemvalue="Tomcat Server.bbs-git" />
       <item itemvalue="Tomcat Server.FInalWork" />
       <item itemvalue="Tomcat Server.index.jsp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestITopicDao.testInsertTopic" />
-        <item itemvalue="JUnit.TestITopicDao.test3" />
-        <item itemvalue="JUnit.TestAccountDao.testInsertAccount" />
-        <item itemvalue="JUnit.TestITopicDao.test2" />
-        <item itemvalue="JUnit.TestITopicDao.test1" />
+        <item itemvalue="JUnit.TestHPService.test1" />
+        <item itemvalue="JUnit.TestAccountDao.testgetProfileBytid" />
+        <item itemvalue="JUnit.TestAccountDao.testInsertsAccount" />
+        <item itemvalue="JUnit.TestAccountDao.testSelectAccount" />
+        <item itemvalue="JUnit.AccountServiceImpl.test" />
       </list>
     </recent_temporary>
   </component>
@@ -422,11 +566,40 @@
       <workItem from="1575681587442" duration="702000" />
       <workItem from="1575682317386" duration="2762000" />
       <workItem from="1575685268535" duration="4381000" />
+      <workItem from="1575692406962" duration="3116000" />
+      <workItem from="1575704572745" duration="9190000" />
+      <workItem from="1575715248435" duration="977000" />
+      <workItem from="1575719057612" duration="6337000" />
+      <workItem from="1575768617246" duration="8215000" />
+      <workItem from="1575792891866" duration="1254000" />
+      <workItem from="1575806536717" duration="7748000" />
+      <workItem from="1575852199177" duration="2199000" />
+      <workItem from="1575854548661" duration="150000" />
+      <workItem from="1575858826001" duration="108000" />
+      <workItem from="1575871189930" duration="5051000" />
+      <workItem from="1575889704883" duration="1055000" />
+      <workItem from="1575895360995" duration="683000" />
+      <workItem from="1575957698848" duration="616000" />
+      <workItem from="1575958572257" duration="929000" />
+      <workItem from="1575959668367" duration="423000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

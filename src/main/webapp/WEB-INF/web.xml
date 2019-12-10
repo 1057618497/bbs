@@ -18,7 +18,10 @@
         <servlet-name>default</servlet-name>
         <url-pattern>*.css</url-pattern>
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.gif</url-pattern>
+    </servlet-mapping>
 
  <!-- 配置Spring的监听器，默认只加载WEB-INF目录下的applicationContext.xml配置文件-->
   <listener>

@@ -10,12 +10,19 @@ import java.util.List;
 @Repository  //此注解代表这是一个持久层，用法类似@controller、@service
 public interface IAccountdao {
 
-    @Select("select * from account")
-    public List<test.Account> findAll();
-    @Insert("insert into account (id,name,money) values(#{id},#{name},#{money})")
-    public void saveAccount(test.Account account);
-   @Select("select * from accounts where name= #{name}")
-    public vo.Account getAccount(String name);
+//    @Select("select * from account")
+//    public List<test.Account> findAll();
+//    @Insert("insert into account (id,name,money) values(#{id},#{name},#{money})")
+//    public void saveAccount(test.Account account);
 
-    public Account insertAccount(Account a);
+    //用户名找账户
+   @Select("select * from account where name= #{name}")
+    public Account getAccount(String name);
+   //添加账户
+    @Insert("insert into account values (#{name},#{password})")
+    public void insertAccount(Account a);
+
+
+
+
 }

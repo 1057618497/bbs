@@ -1,15 +1,15 @@
 package service;
 
+import dao.IAccountdao;
+import org.springframework.beans.factory.annotation.Autowired;
 import test.Account;
 
 import java.util.List;
 
 public interface AccountService {
-    // 查询所有账户
-    public List<Account> findAll();
 
-    // 保存帐户信息
-    public void saveAccount(Account account);
+
+
 
     //获得一个账户
     public vo.Account getAccount(String name);
