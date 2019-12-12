@@ -14,4 +14,8 @@ public interface IProfileDao {
     //用户id 拿到用户信息
     @Select("select * from account_info where id=#{id}")
     public Profile getProfileBytid(int id);
+
+    //添加用户信息 guan
+    @Insert("insert into account_info values (#{id},#{telephone},#{qq},#{job},#{sex},#{points},#{nickname})")
+    public void insertProfile(Profile profile);
 }

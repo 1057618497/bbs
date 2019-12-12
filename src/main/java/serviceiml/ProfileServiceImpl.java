@@ -18,4 +18,11 @@ public class ProfileServiceImpl implements ProfileService {
 //        return p.getNickname();
         return null;
     }
+
+    @Override
+    //用户信息 添加用户信息
+    public void insertProfile(Profile profile){
+        System.out.println("insertProfile service is running!");
+        iProfileDao.insertProfile(profile);
+    }
 }

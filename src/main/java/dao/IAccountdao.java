@@ -1,4 +1,5 @@
 package dao;
+import org.apache.ibatis.annotations.Param;
 import vo.*;
 //import test.Account;
 import org.apache.ibatis.annotations.Insert;
@@ -15,13 +16,14 @@ public interface IAccountdao {
 //    @Insert("insert into account (id,name,money) values(#{id},#{name},#{money})")
 //    public void saveAccount(test.Account account);
 
-    //用户名找账户
+    //用户名找账户 //也可用于用户登录验证用户密码
    @Select("select * from account where name= #{name}")
-    public Account getAccount(String name);
-   //添加账户
-    @Insert("insert into account values (#{name},#{password})")
-    public void insertAccount(Account a);
+   public Account getAccount(@Param("name")String name);
 
+   //添加账户
+   //@Insert("insert into account values (#{name},#{password})")原插入语句
+    @Insert("insert into account values (null,#{name},#{password})")//改动后 guan
+    public void insertAccount(Account a);
 
 
 

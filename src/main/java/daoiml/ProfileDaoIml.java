@@ -9,4 +9,8 @@ public class ProfileDaoIml extends SqlSessionDaoSupport implements IProfileDao {
     public Profile getProfileBytid(int id) {
         return null;
     }
+
+    //添加用户信息 guan
+    @Override
+    public void insertProfile(Profile profile){ }
 }

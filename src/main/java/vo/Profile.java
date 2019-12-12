@@ -1,7 +1,7 @@
 package vo;
 
 public class Profile {
-    private int  id;
+    private int id;
     private String telephone;
     private String qq;
     private String job;
