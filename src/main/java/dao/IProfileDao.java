@@ -17,6 +17,7 @@ public interface IProfileDao {
     @Select("select * from account_info where id=#{id}")
     public Profile getProfileBytid(int id);
 
+
     //修改用户信息
     @Update("update account_info telephone=#{telephone}, qq=#{qq}," +
             "job=#{job},sex={sex},points=#{points},nickname={nickname}" +
@@ -27,7 +28,12 @@ public interface IProfileDao {
     @Delete("delete from account_info where id=#{id}")
     public void deleteProfile(int id);
 
-    //添加profile
-    @Insert("insert into account_info values(#{id},#{telephone},#{qq},#{job},#{sex},#{points},#{nickname})")
-    public int insertProfile(Profile p);
+//    //添加profile
+//    @Insert("insert into account_info values(#{id},#{telephone},#{qq},#{job},#{sex},#{points},#{nickname})")
+//    public int insertProfile(Profile p);
+
+    //添加用户信息 guan
+    @Insert("insert into account_info values (#{id},#{telephone},#{qq},#{job},#{sex},#{points},#{nickname})")
+    public void insertProfile(Profile profile);
+
 }
