@@ -5,6 +5,9 @@ import vo.Topic;
 import java.util.ArrayList;
 
 public interface TopicService {
+    //发新帖
+    public void newTopic(Topic  t);
+
     //由帖子id 获取主贴
     public Topic getTopicBytid(int id);
 

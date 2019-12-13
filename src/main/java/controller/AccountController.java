@@ -1,24 +1,28 @@
 package controller;
 
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.apache.commons.io.FileUtils;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import service.HomePageService;
 import service.ProfileService;
 import service.TopicService;
-import test.Account;
 import service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import vo.HomePage;
 import vo.TopicView;
+import vo.WangEditor;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 public class AccountController {
@@ -31,6 +35,15 @@ public class AccountController {
     private TopicService topicService;
     @Autowired
     private ProfileService profileService;
+
+    @RequestMapping("/index")
+    public String index(){return "index";}
+    //发布新帖
+    @RequestMapping("")
+    public  String writeTopic(){
+        return "";
+    }
+
     //查看帖子
     @RequestMapping("/topic")
     public String browseTopic(HttpServletRequest request){
@@ -125,4 +138,58 @@ public class AccountController {
             return "fail";
         }
     }
+
+    @RequestMapping("edit")
+    public String edit(HttpServletRequest request){
+        String s=request.getParameter("html");
+        String s1=request.getParameter("title");
+        System.out.println(s+"  title:"+s1);
+       return "demo" ;
+    }
+
+    //用户上传图片
+    @RequestMapping(value = "/upload",method=RequestMethod.POST)
+    @ResponseBody
+    public Map<String, String> uploadFile(
+            @RequestParam("myFile") MultipartFile multipartFile,
+
+            HttpServletRequest request) {
+        try {
+
+
+            String filename1=multipartFile.getOriginalFilename();
+            filename1 = filename1.substring(filename1.lastIndexOf(".")+1);
+
+            // 获取项目路径
+            String realPath = request.getSession().getServletContext()
+                    .getRealPath("");
+            InputStream inputStream = multipartFile.getInputStream();
+
+            String contextPath = request.getServletContext().getContextPath();
+
+            // 服务器根目录的路径
+            String path = realPath.replace(contextPath.substring(1),"");
+            // 根目录下新建文件夹upload，存放上传图片
+            String uploadPath = path + "upload";
+            // 获取文件名称
+            String filename = Calendar.getInstance().getTimeInMillis()+"."+filename1;
+            // 将文件上传的服务器根目录下的upload文件夹
+            File file = new File(uploadPath, filename);
+            FileUtils.copyInputStreamToFile(inputStream, file);
+            // 返回图片访问路径
+            String url = request.getScheme() + "://" + request.getServerName()
+                    + ":" + request.getServerPort() + "/bbs/upload/" + filename;
+            String [] strs = {url};
+            WangEditor we = new WangEditor(strs);
+            Map<String, String> map = new HashMap<String, String>();
+            map.put("data",url);
+            return map;
+        } catch (IOException  e) {
+            //logger.error("上传文件失败", e);
+            System.out.println("上传文件失败");
+        }
+        return null;
+
+    }
+
 }

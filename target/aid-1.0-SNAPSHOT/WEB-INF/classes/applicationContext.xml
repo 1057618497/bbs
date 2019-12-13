@@ -61,6 +61,12 @@
     <bean id="TopicDaoIml" class="daoiml.TopicDaoIml">
         <property name="sqlSessionFactory" ref="sqlSessonFactory"/>
     </bean>
+    <!-- 支持上传文件 -->
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="100000"/>
+        <property name="maxInMemorySize" value="10240" />
+    </bean>
     <!--配置AOP增强
     <aop:config>
         <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.gx.service.Impl.*ServiceImpl.*(..))"/>

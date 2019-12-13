@@ -1,5 +1,6 @@
 package dao;
 
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
@@ -25,4 +26,8 @@ public interface IReplyDao {
             "#{ridOfMan},"+
             "#{content})")
     public void insertReply(Reply re);
+
+    //通过主贴id删除主贴下所有回帖
+    @Delete("delete from reply where tid=#{tid}")
+    public void deleteTopicBytid(int tid);
 }

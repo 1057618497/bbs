@@ -52,15 +52,16 @@
 <div id="toptb" class="cl">
     <div class="wp">
 
-        <p id="ttt">this is css</p>
+        <p id="ttt">欢迎来到bbs</p>
 
     </div>
 </div>
 
 <div id="hd">
     <div class="wp">
+        <c:if test="${acc==null}">
         <div class="hdc cl">
-            <h2><a href="./" title="Discuz! 官方站"><img src="images/logo.png" alt="Discuz! 官方站" border="0"></a></h2>
+            <h2><a href="./home" ><img src="images/ncu.png"  height="80" width="80" border="0"></a></h2>
             <script src="js/logging.js" type="text/javascript"></script>
             <form method="post" autocomplete="off" id="lsform"
                   action="member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;infloat=yes&amp;lssubmit=yes"
@@ -101,11 +102,43 @@
                         <input type="hidden" name="handlekey" value="ls">
                     </div>
                     <div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
-                        <p>ppp</p>
+                        <p></p>
                     </div>
                 </div>
             </form>
         </div>
+        </c:if>
+        <c:if test="${acc}==null">
+            <div class="hdc cl">
+                <h2><a href="./home" ><img  src="images/ncu.png"  height="80" width="80"  border="0" /></a>
+                </h2>
+                <div id="um">
+                    <div class="avt y"><a href="home.php?mod=space&amp;uid=3092991"><img
+                            src="https://uc.discuz.net/data/avatar/003/09/29/91_avatar_small.jpg"
+                            onerror="this.onerror=null;this.src='https://uc.discuz.net/images/noavatar_small.gif'" /></a></div>
+                    <p>
+                        <strong class="vwmy"><a href="home.php?mod=space&amp;uid=3092991" target="_blank"
+                                                title="访问我的空间">1057618497</a></strong>
+
+
+
+
+                        <span class="pipe">|</span><a href="javascript:;" id="myitem" class="showmenu"
+                    >我的帖子</a>
+                        <span class="pipe">|</span><a href="home.php?mod=spacecp">设置</a>
+
+
+                        <span class="pipe">|</span><a href="member.php?mod=logging&amp;action=logout&amp;formhash=f6c534c1">退出</a>
+                    </p>
+                    <p>
+                        <a href="home.php?mod=spacecp&amp;ac=credit&amp;showcredit=1" id="extcreditmenu"
+                           onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: 0</a>
+
+                    </p>
+                </div>
+            </div>
+        </c:if>
+
         <div id="nv">
 
             <ul>

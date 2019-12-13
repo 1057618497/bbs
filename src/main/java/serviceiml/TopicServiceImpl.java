@@ -19,6 +19,13 @@ public class TopicServiceImpl implements TopicService {
     @Qualifier("TopicDaoIml")
     @Autowired
     ITopicDao iTopicDao;
+
+    //发新帖
+    @Override
+    public void newTopic(Topic  t){
+        iTopicDao.insertTopic(t);
+    }
+
     @Override
     public Topic getTopicBytid(int id) {
         return iTopicDao.selectTopicBytid(id);

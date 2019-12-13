@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 @Repository
 public interface ITopicDao {
+
+
     //主贴id索引主贴信息
     public Topic selectTopicBytid(int tid);
 
