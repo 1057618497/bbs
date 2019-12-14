@@ -10,6 +10,18 @@ public class ProfileDaoIml extends SqlSessionDaoSupport implements IProfileDao {
         return null;
     }
 
+    //系统提示加的默认重写方法  guan
+    @Override
+    public void updateProfile(Profile p) {
+
+    }
+
+    //系统提示加的默认重写方法  guan
+    @Override
+    public void deleteProfile(int id) {
+
+    }
+
     //添加用户信息 guan
     @Override
     public void insertProfile(Profile profile){ }
