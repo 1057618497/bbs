@@ -17,6 +17,7 @@ public class ProfileDaoIml extends SqlSessionDaoSupport implements IProfileDao {
     }
 
     //系统提示加的默认重写方法  guan
+    //系统提示加的默认重写方法  guan
     @Override
     public void deleteProfile(int id) {
 
