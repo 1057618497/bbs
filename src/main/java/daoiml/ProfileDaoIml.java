@@ -5,8 +5,9 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 import vo.Profile;
 
 public class ProfileDaoIml extends SqlSessionDaoSupport implements IProfileDao {
+    //用户id 拿到用户信息
     @Override
-    public Profile getProfileBytid(int id) {
+    public Profile getProfileById(int id) {
         return null;
     }
 
@@ -17,7 +18,6 @@ public class ProfileDaoIml extends SqlSessionDaoSupport implements IProfileDao {
     }
 
     //系统提示加的默认重写方法  guan
-    //系统提示加的默认重写方法  guan
     @Override
     public void deleteProfile(int id) {
 
@@ -25,5 +25,12 @@ public class ProfileDaoIml extends SqlSessionDaoSupport implements IProfileDao {
 
     //添加用户信息 guan
     @Override
-    public void insertProfile(Profile profile){ }
+    public int insertProfile(Profile profile){ return 0;}
+
+    // public void insertProfile(Profile profile){ }
+
+    @Override
+    public void alterProfile(Profile profile) { }
+
+
 }

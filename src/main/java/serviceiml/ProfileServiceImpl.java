@@ -25,4 +25,24 @@ public class ProfileServiceImpl implements ProfileService {
         System.out.println("insertProfile service is running!");
         iProfileDao.insertProfile(profile);
     }
+
+    @Override
+    //根据用户id 获得用户个人资料
+    public Profile getAccountInfo(int id) {
+        System.out.println("getAccountInfo service by id is running!");
+        return iProfileDao.getProfileById(id);
+    }
+
+    @Override
+    public void alterProfile(Profile profile) {
+        System.out.println("alterProfile service by id is running!");
+        iProfileDao.alterProfile(profile);
+    }
+
+    //根据用户id 删除用户个人资料
+    @Override
+    public void deleteProfileById(int id) {
+        System.out.println("deleteProfile service by id is running!");
+        iProfileDao.deleteProfile(id);
+    }
 }

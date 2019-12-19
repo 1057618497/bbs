@@ -25,7 +25,7 @@ public interface IDraftDao {
     public void deleteDraftBydid(int did);
 
     //修改草稿
-    @Update("update draft save_time=#{save_time},content=#{content},title={title} where did={did}")
+    @Update("update draft save_time=#{save_time},content=#{content},title=#{title} where did=#{did}")
     public void setDraft(Draft d);
 
     //通过用户id删除用户的所有草稿

@@ -8,4 +8,13 @@ public interface ProfileService {
 
     //用户信息 添加用户信息
     public void insertProfile(Profile profile);
+
+    //根据用户id 获得用户个人资料
+    public Profile getAccountInfo(int id);
+
+    //根据用户id，修改用户个人资料
+    public void alterProfile(Profile profile);
+
+    //根据用户id，删除用户个人资料
+    public void deleteProfileById(int id);
 }

@@ -36,7 +36,7 @@ public class TestDao extends BaseJunit4Test{
     }
     @Test
     public void testgetProfileBytid(){
-        Profile p=iProfileDao.getProfileBytid(1);
+        Profile p=iProfileDao.getProfileById(1);
         System.out.println(p);
     }
 
