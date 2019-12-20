@@ -1,4 +1,4 @@
-import dao.IAccountdao;
+/*import dao.IAccountdao;
 import dao.IProfileDao;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,8 +31,8 @@ public class TestDao extends BaseJunit4Test{
         p.setJob("学");
         p.setPoints(0);
         p.setNickname("happyaaa");
-        int i=iProfileDao.insertProfile(p);
-        System.out.println(p.toString()+"i="+i);
+        //int i=iProfileDao.insertProfile(p);
+        //System.out.println(p.toString()+"i="+i);
     }
     @Test
     public void testgetProfileBytid(){
@@ -60,7 +60,7 @@ public class TestDao extends BaseJunit4Test{
         acc.setPassword("123");
         acc.setName("hello1");
         // IAccountdao iAccountdao=(IAccountdao)ac.getBean("IAccountdao");
-        int i=iAccountdao.insertAccount(acc);
+        //int i=iAccountdao.insertAccount(acc);
         Account b=iAccountdao.getAccount(acc.getName());
         System.out.println(b.toString()+"i="+i);
     }
@@ -87,3 +87,4 @@ public class TestDao extends BaseJunit4Test{
         }
     }
 }
+*/
