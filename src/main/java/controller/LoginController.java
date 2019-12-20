@@ -21,6 +21,8 @@ public class LoginController {
     @Autowired
     private ProfileService profileService;
 
+
+    //用户登录
     @RequestMapping("/checkLogin")
     public String loginButton(HttpServletRequest request){
        //验证用户和密码
@@ -30,41 +32,58 @@ public class LoginController {
         System.out.println(password);
         Account account = accountService.getAccount(name);
         System.out.println("checkLogin is running");
-        if(account==null) return "loginFalse";//登陆失败
+
+        HttpSession session=request.getSession();
+        if(account==null) {
+            String error="用户名不存在";
+            session.setAttribute("ERROR",error);
+            return "login";//登陆失败，转跳回登录页面
+        }
         if(password.equals(account.getPassword())) {
-            HttpSession session=request.getSession();
             session.setAttribute("AccountId",account.getId());//传入用户id进入session
             System.out.println("用户id"+account.getId() +"已经进入session");
-          //  return "home";
-            return "loginSuccess";//登录成功
-        } else
-            return "loginFalse";//登陆失败
+            return "home";//登录成功,前往主页
+        } else {
+            String error="密码错误";
+            session.setAttribute("ERROR",error);
+            return "login";//登陆失败，转跳回登录页面
+        }
     }
 
+    //转跳用户注册页面
     @RequestMapping("/account/signUp")
     public String signUpButton(){
         return "signUp";
     }
 
+    //用户注册
     @RequestMapping("/checkSignUp")
     public String signUpAccount(HttpServletRequest request) {
-        //给Account赋值
-        //先调用getAccount（）查询用户名是否重复
-        //调用setAccount（）写入account表
-        //再调用getAccount（）查询该用户的id
-        //将id和其他信息给Profile赋值
-        //调用profileService的setProfile（）写入account_info表
-        vo.Account account = new Account();
+
+        //给Account赋值 调用getAccount（）查询用户名是否重复
+        //调用setAccount（）写入account 调用getAccount（）查询该用户的id
+        //将id和其他信息给Profile赋值 调用profileService的setProfile（）写入account_info表
+
+
+        HttpSession session=request.getSession();
         String name = request.getParameter("username");
-        account.setName(name);
         String password = request.getParameter("password");
+        if(name=="" || password==""){
+            String error="用户名和密码不能为空！";
+            session.setAttribute("ERROR",error);
+            return "signUp";//失败，转跳回注册页面
+        }
+        vo.Account account = new Account();
+        account.setName(name);
         account.setPassword(password);
+
         //查询用户名是否重复
         Account account1 = accountService.getAccount(name);
         System.out.println("checkSignUp is running");
-        if(account1!=null ){//存在
-            System.out.println("该用户名已经存在！");
-            return "loginFalse";//失败
+        if(account1!=null){//存在
+            String error="该用户名已经存在！";
+            session.setAttribute("ERROR",error);
+            return "signUp";//失败，转跳回注册页面
         }else {
             Profile profile = new Profile();
             accountService.insertAccount(account);//添加用户表
@@ -86,7 +105,7 @@ public class LoginController {
             profile.setNickname(nickname);
             profileService.insertProfile(profile);//添加用户信息表
 
-            return "loginSuccess";//成功
+            return "login";//注册成功，转跳登录页面
         }
     }
 
@@ -101,28 +120,34 @@ public class LoginController {
     //转跳管理员登陆页面 guan
     @RequestMapping("/admin/login")
     public String adminLoginButton(){
-        //跳转到 login.jsp
         return "adminLogin";
     }
 
     //检查管理员登陆账号密码
     @RequestMapping("/checkAdminLogin")
-    public String adminLoginButton(HttpServletRequest request){
+    public String adminLoginButton(HttpServletRequest request) {
         //验证管理员的用户和密码
-        String name=request.getParameter("username");
+        String name = request.getParameter("username");
         System.out.println(name);
-        String password=request.getParameter("password");
+        String password = request.getParameter("password");
         System.out.println(password);
         Account account = accountService.getAdmin(name);
         System.out.println("checkAdminLogin is running");
-        if(account==null) return "adminLogin";//登陆失败
-        if(password.equals(account.getPassword())) {
-            HttpSession session=request.getSession();
-            session.setAttribute("adminAccount",account);//传入用户id进入session
-            System.out.println("用户id"+account.getId() +"已经进入session");
-            return "adminHome";//登录成功，前往主页面
-        } else
-            return "adminLogin";//登陆失败，返回登陆页面
+        HttpSession session = request.getSession();
+        if (account == null) {
+            String error = "用户名不存在";
+            session.setAttribute("ERROR", error);
+            return "adminLogin";//登陆失败，转跳回登录页面
+        }
+        if (password.equals(account.getPassword())) {
+            session.setAttribute("AccountId", account.getId());//传入用户id进入session
+            System.out.println("用户id" + account.getId() + "已经进入session");
+            return "home";//登录成功,前往主页
+        } else {
+            String error = "密码错误";
+            session.setAttribute("ERROR", error);
+            return "adminLogin";//登陆失败，转跳回登录页面
+        }
     }
 
     //读取所有的用户，跳转用户管理页面 guan
@@ -133,7 +158,7 @@ public class LoginController {
         Account account=(Account) session.getAttribute("adminAccount");
         if(account==null)
             return "adminLogin";
-        //查找所有用户，
+        //查找所有用户
         List<Account> accounts=accountService.getAllAccount();
         session.setAttribute("Accounts",accounts);
         return "accountManage";
@@ -164,7 +189,7 @@ public class LoginController {
 
     //转跳回管理员主页面
     @RequestMapping("/adminHome")
-    public String adminHomeButtom(){
+    public String adminHomeButton(){
         return "adminHome";
     }
 
@@ -222,6 +247,8 @@ public class LoginController {
         accountService.deleteAccountById(id);
         profileService.deleteProfileById(id);
         //根据id删除帖子和回帖
+    //调用帖子和回帖的服务
+
 
         //重新查找所有用户，更新用户信息
         List<Account> accounts=accountService.getAllAccount();
@@ -234,7 +261,6 @@ public class LoginController {
     //管理员退出
     @RequestMapping("/adminExit")
     public String adminExitButton(HttpServletRequest request){
-
         HttpSession session=request.getSession();
         session.setAttribute("adminAccount",null);//将传入session的用户置空
         return "adminHome";

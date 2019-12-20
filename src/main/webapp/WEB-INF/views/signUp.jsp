@@ -21,8 +21,19 @@
     工作<input type="text" name="job"/><br>
     性别<input type="radio" name="sex" value="1" checked/>男
     <input type="radio" name="sex" value="0"/>女<br>
-        <input type="submit" value="登录"/>
+    <%
+        if(session.getAttribute("ERROR")!=null) {
+            String error = (String) session.getAttribute("ERROR");
+    %>
+    <p><label>错误提示：<%=error%></label></p>
+    <%
+            session.setAttribute("ERROR",null);
+        }
+    %>
+        <input type="submit" value="注册"/>
         <input type = "reset" value="清空"/>
 </form>
+
+<a href="/bbs/account/login">返回登录</a>
 </body>
 </html>

@@ -61,7 +61,7 @@
 <!-- 站务管理  -->
 <div class="fl bm">
     <div class="bm bmw  cl">
-        <div class="bm_h cl"> <h2><a href="">站务管理</a></h2> </div>
+        <div class="bm_h cl"> <h2><a href="./adminHome">站务管理</a></h2> </div>
         <div id="category_61" class="bm_c">
             <table cellspacing="0" cellpadding="0" class="fl_tb">
                 <tr>

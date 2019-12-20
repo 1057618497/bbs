@@ -20,7 +20,15 @@
 
         <p><label class="label_input">用户名</label><input type="text" name="username" class="text_field"/></p>
         <p><label class="label_input">密码</label><input type="password" name="password" class="text_field"/></p>
-
+        <%
+            if(session.getAttribute("ERROR")!=null) {
+                String error = (String) session.getAttribute("ERROR");
+        %>
+        <p><label>错误提示：<%=error%></label></p>
+        <%
+                session.setAttribute("ERROR",null);
+            }
+        %>
         <div id="login_control">
             <input type="submit" id="btn_login" value="登录"/>
             <input type = "reset" id="btn_clear" value="清空"/>
