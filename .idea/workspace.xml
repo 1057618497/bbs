@@ -9,36 +9,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/authoridFind.jsp" line="64" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a26c2d4e-5548-4b1d-a13a-f452992a66b5" name="Default" comment="function about manage&#10;ManageController and relative jsp&#10;Update ITopicDao and IReplyDao">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/aid_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/aid_war2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/aid_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/aid_war_exploded2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aid.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/JingAlready.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/authoridFind.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteAllR.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteTopic.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteaAllT.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/manageJing.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/managehome.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/managepage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a26c2d4e-5548-4b1d-a13a-f452992a66b5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IReplyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IReplyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ITopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ITopicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoiml/TopicDaoIml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoiml/TopicDaoIml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TopicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/serviceiml/TopicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serviceiml/TopicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/controller/AccountController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IAccountdao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IAccountdao.class" afterDir="false" />
@@ -70,7 +42,6 @@
       <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/TopicView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/TopicView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/WangEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/WangEditor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/aid.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AccountController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/IAccountdao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IAccountdao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/IDraftDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IDraftDao.class" afterDir="false" />
@@ -81,7 +52,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/daoiml/TopicDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daoiml/TopicDaoIml.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/AccountService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/HomePageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/HomePageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/LoginService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ProfileService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/SignService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/SignService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/TopicService.class" afterDir="false" />
@@ -102,9 +72,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/vo/TopicView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/TopicView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/vo/WangEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/WangEditor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BaseJunit4Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseJunit4Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/aid.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestAccountDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestHPService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestHPService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestITopicDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestMyBatis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestMyBatis.class" afterDir="false" />
@@ -279,7 +246,7 @@
       <path value="$PROJECT_DIR$/src/main/webapp/wangEditor-3.1.1/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="800" />
     <option name="y" value="165" />
     <option name="width" value="960" />
@@ -520,14 +487,21 @@
       <workItem from="1576820186537" duration="2773000" />
       <workItem from="1576827855032" duration="2361000" />
     </task>
+    <task id="LOCAL-00001" summary="function about manage&#10;ManageController and relative jsp, service&#10;Update ITopicDao and IReplyDao">
+      <created>1576832308672</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576832308672</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60168000" />
+    <option name="totallyTimeSpent" value="61214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -593,7 +567,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="function about manage&#10;ManageController and relative jsp&#10;Update ITopicDao and IReplyDao" />
-    <option name="LAST_COMMIT_MESSAGE" value="function about manage&#10;ManageController and relative jsp&#10;Update ITopicDao and IReplyDao" />
+    <MESSAGE value="function about manage&#10;ManageController and relative jsp, service&#10;Update ITopicDao and IReplyDao" />
+    <option name="LAST_COMMIT_MESSAGE" value="function about manage&#10;ManageController and relative jsp, service&#10;Update ITopicDao and IReplyDao" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -828,6 +803,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
