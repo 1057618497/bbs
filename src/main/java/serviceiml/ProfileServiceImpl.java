@@ -10,6 +10,22 @@ import vo.Profile;
 public class ProfileServiceImpl implements ProfileService {
     @Autowired
     private IProfileDao iProfileDao;
+
+    @Override
+    public void updatePoints5(int tid) {
+        iProfileDao.updateProfilePoints5(tid);
+    }
+
+    @Override
+    public void updatePoints3(int tid) {
+        iProfileDao.updateProfilePoints3(tid);
+    }
+
+    @Override
+    public void updatePoints(int tid, int points) {
+        iProfileDao.updateProfilePoints(tid,points);
+    }
+
     @Override
     //帖子id 获取用户名
     public String getNameBytid(int id) {
@@ -24,5 +40,18 @@ public class ProfileServiceImpl implements ProfileService {
     public void insertProfile(Profile profile){
         System.out.println("insertProfile service is running!");
         iProfileDao.insertProfile(profile);
+    }
+
+    @Override
+    public Profile getProfileByuid(int id) {
+        return iProfileDao.getProfileBytid(id);
+    }
+
+    @Override
+    public String getnicknameByuid(int id) {
+       Profile p= iProfileDao.getProfileBytid(id);
+       if(p==null)
+           return String.valueOf(p.getId());
+       else return p.getNickname();
     }
 }

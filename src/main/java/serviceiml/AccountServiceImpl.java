@@ -12,6 +12,8 @@ public class AccountServiceImpl implements AccountService {
     @Autowired
     private IAccountdao iaccountdao;
 
+
+
     @Override
     public vo.Account getAccount(String name) {
         System.out.println("service is running!");

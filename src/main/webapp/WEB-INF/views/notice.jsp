@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>提示信息</title>
 </head>
 <body>
-$END$
+    <a href="${url}">${notice}!点击返回>>>>></a>
 </body>
 </html>

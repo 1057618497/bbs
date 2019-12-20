@@ -34,6 +34,11 @@
         <result property="recentReName" column="re_id" />
         <!--当然可以只写属性名和列名不一样的，一样的可以省略。id一样也可以省略-->
     </resultMap>
+<!--    &lt;!&ndash;获取所有主贴&ndash;&gt;-->
+<!--    <select id="selectTopBytid" resultMap="Topic" parameterType="int">-->
+<!--            select * from topic,topic_info where topic.tid=topic_info.tid-->
+<!--    </select>-->
+
     <!--主贴id 获取主贴所有信息-->
     <select id="selectTopBytid" resultMap="Topic" parameterType="int">
             select * from topic,topic_info where topic.tid=topic_info.tid
@@ -43,7 +48,7 @@
     <select id="selectTopList" resultMap="BriefTopic">
         select topic.tid,author_id,uptime,
                 re_id,re_time,
-                click,reply,title,require
+                click,reply,title,require,points,jing
         from topic,topic_info,topic_re
         where
             topic.tid=topic_info.tid and topic_info.tid=topic_re.tid
@@ -54,7 +59,7 @@
         select  top ${end}
                 topic.tid,author_id,uptime,
                 re_id,re_time,
-                click,reply,title,require
+                click,reply,title,require,points,jing
         from topic,topic_info,topic_re
         where
             topic.tid=topic_info.tid and topic_info.tid=topic_re.tid
@@ -67,33 +72,40 @@
         select top ${end}
                 topic.tid,author_id,uptime,
                 re_id,re_time,
-                click,reply,title,require
+                click,reply,title,require,points,jing
         from topic,topic_info,topic_re
         where
             topic.tid=topic_info.tid and topic_info.tid=topic_re.tid
+        <if test="tType!= 2">
             and require=#{tType}
+        </if>
             ORDER BY click DESC
     </select>
     <select id="selectList2" resultMap="BriefTopic" resultType="vo.HomePage">
         select top ${end}
                 topic.tid,author_id,uptime,
                 re_id,re_time,
-                click,reply,title,require
+                click,reply,title,require,points,jing
         from topic,topic_info,topic_re
         where
             topic.tid=topic_info.tid and topic_info.tid=topic_re.tid
+        <if test="tType!= 2">
             and require=#{tType}
+        </if>
             ORDER BY reply DESC
     </select>
     <select id="selectList3" resultMap="BriefTopic" resultType="vo.HomePage">
         select top ${end}
                 topic.tid,author_id,uptime,
                 re_id,re_time,
-                click,reply,title,require
+                click,reply,title,require,points,jing
         from topic,topic_info,topic_re
         where
             topic.tid=topic_info.tid and topic_info.tid=topic_re.tid
-            and require=#{tType}
+             <if test="tType!= 2">
+                and require=#{tType}
+             </if>
+
             ORDER BY re_time DESC
     </select>
     <!-- 相应帖子数量-->

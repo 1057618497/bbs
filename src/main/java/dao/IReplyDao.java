@@ -15,12 +15,12 @@ public interface IReplyDao {
     public ArrayList<Reply> selectByTid(int tid);
 
     //返回用户id 的所有回帖 列表
-    @Select( "select * from reply,topic where topic.tid=reply.tid and author_id=#{id}")
+    @Select( "select * from reply where ridOfMan=#{id} order by reTime desc")
     public ArrayList<Reply> selectByid(int id);
 
     //添加回帖
-    @Insert("insert into reply values(" +
-            "#{rid}," +
+    @Insert("insert into reply(tid,reTime,ridOfMan,content) values(" +
+
             "#{tid}," +
             "#{reTime},"+
             "#{ridOfMan},"+
@@ -30,4 +30,8 @@ public interface IReplyDao {
     //通过主贴id删除主贴下所有回帖
     @Delete("delete from reply where tid=#{tid}")
     public void deleteTopicBytid(int tid);
+
+    //通过回帖id删除回帖
+    @Delete("delete from reply where rid=#{rid}")
+    public int deleteReplyByrid(int rid);
 }

@@ -1,9 +1,12 @@
 package daoiml;
 import com.sun.java.browser.plugin2.liveconnect.v1.BridgeFactory;
+import dao.IProfileDao;
 import dao.ITopicDao;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Update;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import vo.*;
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
@@ -14,6 +17,8 @@ import java.util.List;
 public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
     @Autowired
     SqlSessionFactory sqlSessionFactory;
+    @Autowired
+    IProfileDao iProfileDao;
    // @Autowired
    // SqlSession sqlSession;
 
@@ -21,6 +26,26 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
 //        this.sqlSession=sqlSession;
 //    }
 
+    @Override
+    public void updateReply(String time, int tid, int rid) {
+
+    }
+
+    //帖子回复数+1
+    @Update("update topic_info set reply=reply+1 where tid=#{tid}")
+    public void updateReplyNum(int tid) {
+
+    }
+    //帖子浏览数+1
+    @Update("update topic_info set click=click+1 where tid=#{tid}")
+    public void updateClickNum(int tid) {
+
+    }
+
+    @Override
+    public ArrayList<Topic> selectTopicList() {
+        return null;
+    }
 
     @Override
     public Topic selectTopicBytid( int s) {
@@ -38,13 +63,23 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
     public void insertTopic(@Param("t") Topic t) {
         SqlSession sqlSession=this.sqlSessionFactory.openSession();
         try {
-            sqlSession.selectOne("dao.ITopicDao.insertTopic_t", t);
-            sqlSession.selectOne("dao.ITopicDao.insertTopic_r", t);
-            sqlSession.selectOne("dao.ITopicDao.insertTopic_info", t);
+            sqlSession.insert("dao.ITopicDao.insertTopic_t", t);
+            sqlSession.insert("dao.ITopicDao.insertTopic_r", t);
+            sqlSession.insert("dao.ITopicDao.insertTopic_info", t);
 
         } finally {
             sqlSession.close();
         }
+
+    }
+
+    @Override
+    public void updateTopicPoints(int points, int tid) {
+
+    }
+
+    @Override
+    public void updateTopic(Topic t) {
 
     }
 
@@ -60,7 +95,7 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
         ArrayList<BriefTopic>nlist=new ArrayList<>();
         SqlSession sqlSession=this.sqlSessionFactory.openSession();
         try {
-            //获取帖子总数
+            //获取帖子总数num
             if(hp.gettType()==2)
                 num = sqlSession.selectOne("dao.ITopicDao.totalNum");
             else num=sqlSession.selectOne("dao.ITopicDao.totalNum_re",hp.gettType());
@@ -71,6 +106,10 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
             //设置置顶帖
             for(int i=0;i<list.size();i++){
                 BriefTopic v=(BriefTopic)list.get(i);
+                int uid=Integer.valueOf(v.getAuthor());
+                v.setAuthor(this.getkicnname(uid));
+                uid=Integer.valueOf(v.getRecentReName());
+                v.setRecentReName(this.getkicnname(uid));
                 toplist.add(v);
             }
             hp.setTopList(toplist);
@@ -88,6 +127,11 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
             for(int i=hp.getStart();i<hp.getEnd();i++)
                 if(i<list.size()){
                 BriefTopic v=(BriefTopic)list.get(i);
+
+                    int uid=Integer.valueOf(v.getAuthor());
+                    v.setAuthor(this.getkicnname(uid));
+                    uid=Integer.valueOf(v.getRecentReName());
+                    v.setRecentReName(this.getkicnname(uid));
                 nlist.add(v);
             }
             hp.setList(nlist);
@@ -101,4 +145,30 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
     public ArrayList<Topic> selectByid(int id) {
         return null;
     }
+
+    @Override
+    public int deleteTopicBytid(int tid) {
+        return 0;
+    }
+
+    @Override
+    public int deleteTopicInfoBytid(int tid) {
+        return 0;
+    }
+
+    @Override
+    public int deleteTopicReBytid(int tid) {
+        return 0;
+    }
+
+    String getkicnname(int id){
+        Profile profile=iProfileDao.getProfileBytid(id);
+
+        if(profile==null)
+        return String.valueOf(id);
+        else
+            return profile.getNickname();
+    }
+
+
 }

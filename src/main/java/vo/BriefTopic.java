@@ -10,6 +10,24 @@ public class BriefTopic {//主页浏览帖子
     private int clickNum;//点击数
     private String recentReName;//最新回复人
     private String rt;//最新回复时间
+    private int points;//积分
+    private int jing;//加精
+
+    public int getJing() {
+        return jing;
+    }
+
+    public void setJing(int jing) {
+        this.jing = jing;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
+    }
 
     public int getType() {
         return type;

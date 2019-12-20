@@ -19,14 +19,14 @@ public class AccountDaoIml extends SqlSessionDaoSupport implements IAccountdao {
     }
 
     @Override
-//    public int insertAccount(Account a) {
+    public int insertAccount(Account a) {
+
+
+        return 0;
+    }
+
+//    public void insertAccount(Account a){ }
 //
 //
-//        return 0;
-//    }
-
-    public void insertAccount(Account a){ }
-
-
 }
 

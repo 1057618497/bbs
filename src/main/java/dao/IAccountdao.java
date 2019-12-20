@@ -25,9 +25,9 @@ public interface IAccountdao {
 //   @Select("select * from account where name= #{name}")
 //    public Account getAccount(String name);
 //   //添加账户  返回修改行数
-//    @Insert("insert into account values (#{name},#{password})")
-//    @Options(useGeneratedKeys=true, keyProperty="id", keyColumn="id")
-//    public int insertAccount(Account a);
+    @Insert("insert into account values (#{name},#{password})")
+    @Options(useGeneratedKeys=true, keyProperty="id", keyColumn="id")
+    public int insertAccount(Account a);
 
     //用户名找账户 //也可用于用户登录验证用户密码
    @Select("select * from account where name= #{name}")
@@ -35,8 +35,8 @@ public interface IAccountdao {
 
    //添加账户
    //@Insert("insert into account values (#{name},#{password})")原插入语句
-    @Insert("insert into account values (null,#{name},#{password})")//改动后 guan
-    public void insertAccount(Account a);
+//    @Insert("insert into account values (null,#{name},#{password})")//改动后 guan
+//    public void insertAccount(Account a);
 
 
 

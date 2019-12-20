@@ -7,33 +7,112 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8a1df7d-5c77-467f-8066-3e3d19413524" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginFalse.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/signUp.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/loginbackground.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vo/Unit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/IAccountdao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IAccountdao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IDraftDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IDraftDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/IProfileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IProfileDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IReplyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IReplyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ITopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ITopicDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/daoiml/AccountDaoIml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoiml/AccountDaoIml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoiml/ProfileDaoIml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoiml/ProfileDaoIml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daoiml/ProfileDaoIml.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daoiml/TopicDaoIml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoiml/TopicDaoIml.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TopicService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/serviceiml/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serviceiml/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serviceiml/HomePageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serviceiml/HomePageServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/serviceiml/ProfileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serviceiml/ProfileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vo/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vo/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoiml/ProfileDaoIml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serviceiml/TopicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serviceiml/TopicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vo/BriefTopic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vo/BriefTopic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vo/TopicView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vo/TopicView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/briefTopic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/briefTopic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modifyDraft.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newTopic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginTest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modifyTopic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/topic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/topic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/agree.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/agree.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestHPService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestHPService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestITopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestITopicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IAccountdao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IAccountdao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IDraftDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IDraftDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IProfileDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IProfileDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IReplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IReplyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/ITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/ITopicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/daoiml/AccountDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/daoiml/AccountDaoIml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/daoiml/TopicDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/daoiml/TopicDaoIml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/mapper/briefTopic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/mapper/briefTopic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/ProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/TopicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/HomePageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/HomePageServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/ProfileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/ProfileServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/TopicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/TopicServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/BriefTopic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/BriefTopic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/TopicView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/TopicView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/fail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/loginTest.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/success.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/topic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/topic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/images/agree.gif" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/images/agree.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/IAccountdao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IAccountdao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/IDraftDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IDraftDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/IProfileDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IProfileDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/IReplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IReplyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/ITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ITopicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daoiml/AccountDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daoiml/AccountDaoIml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daoiml/TopicDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daoiml/TopicDaoIml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/briefTopic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/briefTopic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/TopicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serviceiml/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceiml/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serviceiml/HomePageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceiml/HomePageServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serviceiml/ProfileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceiml/ProfileServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serviceiml/TopicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceiml/TopicServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vo/BriefTopic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/BriefTopic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vo/TopicView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/TopicView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestHPService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestHPService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestITopicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/前端/forum.html" beforeDir="false" afterPath="$PROJECT_DIR$/前端/forum.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="FInakWork" />
@@ -45,8 +124,8 @@
         <option value="FxmlFile" />
         <option value="Tag Library Descriptor" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -116,6 +195,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestDao.insertReply" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestDao" />
+      <option name="METHOD_NAME" value="insertReply" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestDao.testInsertsAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aid" />
       <option name="PACKAGE_NAME" value="" />
@@ -126,31 +215,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDao.testSelectAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aid" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestDao" />
-      <option name="METHOD_NAME" value="testSelectAccount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDao.testgetProfileBytid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aid" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestDao" />
-      <option name="METHOD_NAME" value="testgetProfileBytid" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestHPService.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHPService.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aid" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestHPService" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHPService.testGetSearchList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestHPService" />
+      <option name="METHOD_NAME" value="testGetSearchList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -453,22 +532,22 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMyBatis.run1" />
-      <item itemvalue="JUnit.TestDao.testSelectAccount" />
       <item itemvalue="JUnit.TestDao.testInsertsAccount" />
-      <item itemvalue="JUnit.TestDao.testgetProfileBytid" />
-      <item itemvalue="JUnit.TestHPService.test1" />
       <item itemvalue="JUnit.TestDao.insertProfile" />
+      <item itemvalue="JUnit.TestDao.insertReply" />
+      <item itemvalue="JUnit.TestHPService.testGetSearchList" />
+      <item itemvalue="JUnit.TestHPService.test2" />
       <item itemvalue="Tomcat Server.bbs-git" />
       <item itemvalue="Tomcat Server.FInalWork" />
       <item itemvalue="Tomcat Server.index.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestHPService.testGetSearchList" />
+        <item itemvalue="JUnit.TestHPService.test2" />
+        <item itemvalue="JUnit.TestDao.insertReply" />
         <item itemvalue="JUnit.TestDao.insertProfile" />
         <item itemvalue="JUnit.TestDao.testInsertsAccount" />
-        <item itemvalue="JUnit.TestDao.testSelectAccount" />
-        <item itemvalue="JUnit.TestHPService.test1" />
-        <item itemvalue="JUnit.TestDao.testgetProfileBytid" />
       </list>
     </recent_temporary>
   </component>
@@ -536,7 +615,34 @@
       <workItem from="1576117760930" duration="5829000" />
       <workItem from="1576136735053" duration="885000" />
       <workItem from="1576207258601" duration="909000" />
-      <workItem from="1576239667796" duration="556000" />
+      <workItem from="1576239667796" duration="1694000" />
+      <workItem from="1576244533482" duration="610000" />
+      <workItem from="1576245313226" duration="2191000" />
+      <workItem from="1576294482116" duration="2233000" />
+      <workItem from="1576321217000" duration="553000" />
+      <workItem from="1576321799004" duration="6625000" />
+      <workItem from="1576332783712" duration="119000" />
+      <workItem from="1576382663217" duration="3746000" />
+      <workItem from="1576396915187" duration="9121000" />
+      <workItem from="1576411388516" duration="141000" />
+      <workItem from="1576418216667" duration="501000" />
+      <workItem from="1576461849416" duration="10032000" />
+      <workItem from="1576550072258" duration="616000" />
+      <workItem from="1576552267858" duration="1109000" />
+      <workItem from="1576573853463" duration="3576000" />
+      <workItem from="1576583794760" duration="74000" />
+      <workItem from="1576590645387" duration="2632000" />
+      <workItem from="1576648360941" duration="5371000" />
+      <workItem from="1576656292936" duration="5008000" />
+      <workItem from="1576672655470" duration="4606000" />
+      <workItem from="1576722984587" duration="4346000" />
+      <workItem from="1576746423837" duration="3971000" />
+      <workItem from="1576763580098" duration="2242000" />
+      <workItem from="1576798718939" duration="5041000" />
+      <workItem from="1576804173467" duration="911000" />
+      <workItem from="1576806512018" duration="339000" />
+      <workItem from="1576807754542" duration="6107000" />
+      <workItem from="1576818020561" duration="3007000" />
     </task>
     <servers />
   </component>

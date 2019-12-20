@@ -5,11 +5,62 @@
     <meta http-equiv="Content-Type"; content="multipart/form-data; charset=utf-8"/>
     <meta charset="UTF-8">
     <title>wangEditor demo</title>
+    <link rel="stylesheet" type="text/css" href="/bbs/css/style_1_common.css" >
+    <link rel="stylesheet" type="text/css" href="/bbs/css/style_1_forum_forumdisplay.css">
+
 </head>
-<body>
-<div >
-    <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+<body id="nv_forum" class="pg_forumdisplay">
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+    <div class="wp">
+
+        <p id="ttt">欢迎来到bbs</p>
+
+    </div>
 </div>
+<div id="hd">
+    <div class="wp">
+<div class="hdc cl">
+    <h2><a href="./home" ><img  src="images/ncu.png"  height="80" width="80"  border="0" /></a>
+    </h2>
+    <div id="um">
+        <div class="avt y"><a href="home.php?mod=space&amp;uid=3092991"><img
+                src="https://uc.discuz.net/data/avatar/003/09/29/91_avatar_small.jpg"
+                onerror="this.onerror=null;this.src='https://uc.discuz.net/images/noavatar_small.gif'" /></a></div>
+        <p>
+            <strong class="vwmy"><a href="home.php?mod=space&amp;uid=3092991" target="_blank"
+                                    title="访问我的空间">${userProfile.nickname}</a></strong>
+
+
+
+
+            <span class="pipe">|</span><a href="myView" id="myitem" class="showmenu"
+        >我的帖子</a>
+            <span class="pipe">|</span><a href="home.php?mod=spacecp">设置</a>
+
+
+            <span class="pipe">|</span><a href="./account/exit">退出</a>
+        </p>
+        <p>
+            <a href="home" id="extcreditmenu"
+               class="showmenu">积分:${userProfile.points}</a>
+
+        </p>
+    </div>
+</div>
+    </div>
+</div>
+<div id="nv">
+
+    <ul>
+        <li class="a" id="mn_forum"><a href="home" hidefocus="true" title="BBS">论坛首页<span>BBS</span></a></li>
+
+    </ul>
+</div>
+
+<div align="center">
+<br><hr>
 
 <!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->
 <script type="text/javascript"charset="utf-8" src="${pageContext.request.contextPath}/wangEditor-3.1.1/release/wangEditor.js"></script>
@@ -100,38 +151,87 @@
     function f3() {
         var text=document.getElementById("area");
         var content=editor.txt.html();
+        document.form.action="newTopicAction";
+
+        //alert(content);
+        text.value=content;
+        if(text.value.length<=7|| document.getElementById("title").value.length<=0){
+            alert("帖子和标题长度不能为0"  );
+        }
+        else{
+        text.value=content;
+        var radio=document.getElementsByName("isRequire");
+        var p=document.getElementById("points").value;
+        if(radio[0].checked){
+            document.getElementById("points").value=0;
+            form.submit();
+        }
+        else if(p>${userProfile.points})
+            alert("积分不足");
+        else form.submit();
+        }
+    }
+    function f4(){
+        var text=document.getElementById("area");
+        var content=editor.txt.html();
+        document.form.action="newDraftAction";
+
         //alert(content);
         text.value=content;
         form.submit();
     }
+
+    function  f6() {
+        var p=document.getElementById("points").value;
+        if(p>${userProfile.points}||p<0)
+            alert("积分不足或为负数");
+    }
+
 </script>
 
-<form name="form" action="edit" method="post" >
-<table>
+<form name="form" action="edit" method="post" id="form">
+<table >
     <tr>
-        <td colspan="2">标题<br>
-        <input type="text" name="title"> </td>
+        <td colspan="2"><b>标题:</b>
+        <input type="text" name="title" id="title" style="width:1000px"><br></td><br>
     </tr>
     <tr>
+        <td><br><b>请选择帖子类型:</b><br><br><br><hr></td>
+        <td >
+
+            <br><input type="radio" name="isRequire" checked value="0" >交流
+            <input type="radio" name="isRequire" value="1">需求
+            设置需求积分奖励：<input type="text" id="points" name="points" value="0"   onblur="f6()"><br><br><br><hr>
+        </td>
+    </tr>
+
+    <tr>
+
         <td colspan="2" id="editor">
-            <script>editor.create()</script>
+
+
 
         </td>
+        <script>editor.create()</script>
     </tr>
     <tr>
         <td colspan="2">
             <input type="hidden" id="area" rows="15" cols="30" name="html"></input>
+
+        </td>
     </tr>
 
 
     <tr>
-        <td><input type="button" method="POST" value="提交" id="sub" onclick="f3()"> </td>
-        <td> <input type="submit" value="submit"></td>
+        <td align="center"><input type="button" method="POST" value="发布帖子" id="sub1" onclick="f3()"> </td>
+        <td align="center"><input type="button" method="POST" value="保存草稿" id="sub2" onclick="f4()"> </td>
     </tr>
 </table>
 </form>
+    <!--
 <input type="button" id="btn1" value="html" onclick="f1()">
 <input type="button" id="btn2" value="text" onclick="f2()">
-
+-->
+</div>
 </body>
 </html>

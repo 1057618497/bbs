@@ -12,6 +12,8 @@ import vo.BriefTopic;
 import vo.HomePage;
 import vo.Topic;
 
+import java.util.ArrayList;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
 @ContextConfiguration(locations = {"classpath*:applicationContext*.xml", "classpath*:spring/spring-mvc.xml" })
@@ -23,6 +25,20 @@ public class TestHPService extends BaseJunit4Test {
     @Autowired
     private TopicService topicService;
 
+
+    @Test
+    public void testGetSearchList(){
+        String serach="测试";
+        ArrayList<Topic> li=topicService.getSearchContentTopicList(serach);
+        for(Topic i:li)
+            System.out.println(li);
+    }
+
+    @Test
+    public void test2() {
+        String s="这时测试";
+        System.out.println(s.replace("测试","<font>"+s));
+    }
     @Test
     public void test1() {
         Topic t;

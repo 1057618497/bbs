@@ -1,11 +1,8 @@
 package  dao;
 
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 import vo.*;
 //import test.Account;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -16,6 +13,19 @@ public interface IProfileDao {
     //用户id 拿到用户信息
     @Select("select * from account_info where id=#{id}")
     public Profile getProfileBytid(int id);
+
+    //用户发帖 积分+5
+    @Update("update account_info set points=points+5 where id=#{tid}")
+    public void updateProfilePoints5(int tid);
+
+    //用户发帖 积分+3
+    @Update("update account_info set points=points+3 where id=#{tid}")
+    public void updateProfilePoints3(int tid);
+
+    @Update("update account_info set points=points+#{points} where id=#{tid}")
+    public void updateProfilePoints(@Param("tid")int tid, @Param("points")int points);
+
+
 
 
     //修改用户信息

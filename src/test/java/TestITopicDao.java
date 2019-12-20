@@ -30,6 +30,8 @@ public class TestITopicDao extends BaseJunit4Test {
 //    } finally {
 //        sqlSession.close();
 //    }
+
+
     @Test
     public void getList() {
         ApplicationContext ac = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
@@ -100,7 +102,7 @@ public class TestITopicDao extends BaseJunit4Test {
     @Test
     public void test3(){
         Date dNow = new Date( );
-        SimpleDateFormat ft = new SimpleDateFormat ("yyyyMMddhhmmss");
+        SimpleDateFormat ft = new SimpleDateFormat ("yyyyMMddHHmmss");
         int y3=(int)(Math.random()*10);
         int y4=(int)(Math.random()*10);
         int d2=(int)(Math.random()*10);
@@ -123,7 +125,7 @@ public class TestITopicDao extends BaseJunit4Test {
         for(int i=0;i<50;i++) {
 
             Date dNow = new Date( );
-            SimpleDateFormat ft = new SimpleDateFormat ("yyyyMMddhhmmss");
+            SimpleDateFormat ft = new SimpleDateFormat ("yyyyMMddHHmmss");
             int y3=(int)(Math.random()*10);
             int y4=(int)(Math.random()*10);
             int d2=(int)(Math.random()*10);
