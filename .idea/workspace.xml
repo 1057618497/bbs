@@ -10,73 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a26c2d4e-5548-4b1d-a13a-f452992a66b5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ManageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Tchange.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteReply.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/manageTip.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/controller/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IAccountdao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IAccountdao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IDraftDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IDraftDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IProfileDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IProfileDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IReplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/IReplyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/ITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/dao/ITopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/daoiml/AccountDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/daoiml/AccountDaoIml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/daoiml/TopicDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/daoiml/TopicDaoIml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/HomePageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/HomePageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/ProfileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/SignService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/SignService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/service/TopicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/HomePageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/HomePageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/ProfileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/ProfileServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/TopicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/serviceiml/TopicServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/spring/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/spring/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/test/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/test/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/test/TestITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/test/TestITopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/BriefTopic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/BriefTopic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Draft.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Draft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Profile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Reply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Reply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Topic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/Topic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/TopicView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/TopicView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/WangEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/classes/vo/WangEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/aid-1.0-SNAPSHOT/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/IAccountdao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IAccountdao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/IDraftDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IDraftDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/IProfileDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IProfileDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/IReplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IReplyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/ITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ITopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoiml/AccountDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daoiml/AccountDaoIml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoiml/TopicDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daoiml/TopicDaoIml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/HomePageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/HomePageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ProfileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/SignService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/SignService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/TopicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/serviceiml/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceiml/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/serviceiml/HomePageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceiml/HomePageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/serviceiml/ProfileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceiml/ProfileServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/serviceiml/TopicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceiml/TopicServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/TestITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/TestITopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vo/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vo/BriefTopic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/BriefTopic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vo/Draft.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/Draft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vo/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vo/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/Profile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vo/Reply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/Reply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vo/Topic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/Topic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vo/TopicView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/TopicView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vo/WangEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vo/WangEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseJunit4Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseJunit4Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestHPService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestHPService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestITopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestITopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestMyBatis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestMyBatis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestProfileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestSpring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestSpring.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,7 +29,7 @@
       <file leaf-file-name="ManageController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/ManageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
+            <state relative-caret-position="234">
               <caret line="142" column="45" selection-start-line="142" selection-start-column="45" selection-end-line="142" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -103,7 +41,7 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4272">
+            <state relative-caret-position="1462">
               <caret line="98" selection-start-line="98" selection-end-line="98" />
             </state>
           </provider>
@@ -112,7 +50,7 @@
       <file leaf-file-name="TopicServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/serviceiml/TopicServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="1037">
               <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
             </state>
           </provider>
@@ -121,7 +59,7 @@
       <file leaf-file-name="ITopicDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/ITopicDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="714">
               <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
@@ -139,7 +77,7 @@
       <file leaf-file-name="IReplyDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/IReplyDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
+            <state relative-caret-position="187">
               <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
             </state>
           </provider>
@@ -148,7 +86,7 @@
       <file leaf-file-name="IAccountdao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/IAccountdao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
+            <state relative-caret-position="442">
               <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
             </state>
           </provider>
@@ -165,9 +103,7 @@
       </file>
       <file leaf-file-name="aid.iws" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aid.iws">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2244" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -246,7 +182,7 @@
       <path value="$PROJECT_DIR$/src/main/webapp/wangEditor-3.1.1/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="800" />
     <option name="y" value="165" />
     <option name="width" value="960" />
@@ -486,6 +422,7 @@
       <workItem from="1576808389566" duration="814000" />
       <workItem from="1576820186537" duration="2773000" />
       <workItem from="1576827855032" duration="2361000" />
+      <workItem from="1576835070570" duration="233000" />
     </task>
     <task id="LOCAL-00001" summary="function about manage&#10;ManageController and relative jsp, service&#10;Update ITopicDao and IReplyDao">
       <created>1576832308672</created>
@@ -494,69 +431,54 @@
       <option name="project" value="LOCAL" />
       <updated>1576832308672</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="function about manage&#10;ManageController and relative jsp, service&#10;Update ITopicDao and IReplyDao">
+      <created>1576833254166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576833254166</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61214000" />
+    <option name="totallyTimeSpent" value="61874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32876712" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3657534" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019531" side_tool="true" visible="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49934897" weight="0.32876712" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.49804688" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37534246" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49202734" visible="true" weight="0.19791667" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3657534" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37534246" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32876712" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49202734" visible="true" weight="0.2063802" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32876712" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49202734" visible="true" weight="0.2063802" />
       <window_info id="Web" order="7" sideWeight="0.50797266" side_tool="true" weight="0.15364583" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3657534" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32876712" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -803,15 +725,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/serviceiml/TopicServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="1037">
           <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
         </state>
       </provider>
@@ -852,41 +771,39 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aid.iws">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2244" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/IAccountdao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
+        <state relative-caret-position="442">
           <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/IReplyDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
+        <state relative-caret-position="187">
           <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/ITopicDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="714">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4272">
+        <state relative-caret-position="1462">
           <caret line="98" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/ManageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
+        <state relative-caret-position="234">
           <caret line="142" column="45" selection-start-line="142" selection-start-column="45" selection-end-line="142" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
