@@ -63,8 +63,6 @@ public class LoginController {
         //给Account赋值 调用getAccount（）查询用户名是否重复
         //调用setAccount（）写入account 调用getAccount（）查询该用户的id
         //将id和其他信息给Profile赋值 调用profileService的setProfile（）写入account_info表
-
-
         HttpSession session=request.getSession();
         String name = request.getParameter("username");
         String password = request.getParameter("password");
@@ -140,9 +138,9 @@ public class LoginController {
             return "adminLogin";//登陆失败，转跳回登录页面
         }
         if (password.equals(account.getPassword())) {
-            session.setAttribute("AccountId", account.getId());//传入用户id进入session
-            System.out.println("用户id" + account.getId() + "已经进入session");
-            return "home";//登录成功,前往主页
+            session.setAttribute("adminAccount", account);//传入用户进入session
+            System.out.println("用户" + account.getName() + "已经进入session");
+            return "adminHome";//登录成功,前往主页
         } else {
             String error = "密码错误";
             session.setAttribute("ERROR", error);
@@ -168,13 +166,18 @@ public class LoginController {
     @RequestMapping("/adminViewAccountInfo")
     public String viewAccountInfoButton(HttpServletRequest request){
 
+        HttpSession session=request.getSession();
+        //检查管理员是否登录，没登转跳登录页面
+        Account account1=(Account) session.getAttribute("adminAccount");
+        if(account1==null)
+            return "adminLogin";
+
         String id1=request.getParameter("id");
         int id = Integer.parseInt(id1);
         System.out.println(id);
         //根据id查询account表
         Account account=accountService.getAccount(id);
         //传入session
-        HttpSession session=request.getSession();
         session.setAttribute("Account",account);
         //如果结果为空
         if(account==null) {}
@@ -196,6 +199,12 @@ public class LoginController {
     //管理员修改个人资料
     @RequestMapping("/adminEditProfile")
     public String adminEditProfile(HttpServletRequest request){
+
+        HttpSession session=request.getSession();
+        //检查管理员是否登录，没登转跳登录页面
+        Account account1=(Account) session.getAttribute("adminAccount");
+        if(account1==null)
+            return "adminLogin";
 
         String id1=request.getParameter("id");
         int id = Integer.parseInt(id1); //用户id
@@ -230,7 +239,7 @@ public class LoginController {
         //重新根据id查询更新后的个人信息
         account=accountService.getAccount(id);
         profile=profileService.getAccountInfo(id);
-        HttpSession session=request.getSession();
+
         session.setAttribute("Account",account);
         session.setAttribute("Profile",profile);
         return "adminViewAccountInfo";
@@ -240,6 +249,12 @@ public class LoginController {
     @RequestMapping("/adminDeleteAccount")
     public String adminDeleteAccount(HttpServletRequest request){
 
+        HttpSession session=request.getSession();
+        //检查管理员是否登录，没登转跳登录页面
+        Account account1=(Account) session.getAttribute("adminAccount");
+        if(account1==null)
+            return "adminLogin";
+
         String id1=request.getParameter("id");
         int id = Integer.parseInt(id1); //用户id
 
@@ -247,13 +262,11 @@ public class LoginController {
         accountService.deleteAccountById(id);
         profileService.deleteProfileById(id);
         //根据id删除帖子和回帖
-    //调用帖子和回帖的服务
-
+        //调用帖子和回帖的服务
 
         //重新查找所有用户，更新用户信息
         List<Account> accounts=accountService.getAllAccount();
 
-        HttpSession session=request.getSession();
         session.setAttribute("Accounts",accounts);
         return "accountManage";
     }

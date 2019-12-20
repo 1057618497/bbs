@@ -53,9 +53,9 @@
             }
         %>
         <div id="login_control">
-          <button type="submit" id="btn_login">登录</button>
-        <button type = "reset" id="btn_clear" >清空</button>
-            <button id="btn_clear"><a href="/bbs/account/signUp">注册</a></button>
+            <button type="submit" id="btn_login">登录</button>
+            <button type="reset" id="btn_clear" >清空</button>
+            <label id="btn_clear"><a href="/bbs/account/signUp">注册</a></label>
         </div>
     </form>
 </div>
