@@ -27,7 +27,7 @@ public interface ITopicDao {
     @Select("select * from topic,topic_info,topic_re where topic.tid=topic_info.tid and topic.tid=topic_re.tid")
     public ArrayList<Topic> selectTopicList();
 
-    //返回所有帖子
+    //返回所有主帖
     @Select("select *from TOPiC_INFO")
     public ArrayList<Topic> SelectAllT();
 
@@ -44,6 +44,6 @@ public interface ITopicDao {
     public void updateadd_top(int add_top,int Tid);
 
     //删除tid对elete from topic,reply where topic.tid=reply.tid and tid=#{Tid};应的主帖和回帖
-    @Delete("d")
+    @Delete("delete from topic where tid=#{Tid} delete from reply where tid=#{Tid)")
     public  void deleteAllBytid(int Tid);
 }

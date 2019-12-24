@@ -15,7 +15,7 @@ public interface TopicService {
     public ArrayList<Reply> getReListBytid(int id);
 
     //获取所有帖子
-    public ArrayList<Topic> getAllT();
+    public ArrayList<Topic> selectTopicList();
 
     //删除rid对应回帖
     public void deleteReplyByrid(int rid);

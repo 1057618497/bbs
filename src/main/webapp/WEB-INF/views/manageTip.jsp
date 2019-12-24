@@ -13,6 +13,8 @@
 <head>
     <title>帖子管理</title>
 </head>
+
+
 <body>
 <%
     ArrayList<Topic> topics=new ArrayList<Topic>();

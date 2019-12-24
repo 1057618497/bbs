@@ -47,7 +47,7 @@ public class TopicServiceImpl implements TopicService {
 
     //获取所有帖子
     @Override
-    public ArrayList<Topic> getAllT(){return iTopicDaoInterface.selectTopicList();}
+    public ArrayList<Topic> selectTopicList(){return iTopicDaoInterface.selectTopicList();}
 
     //删除rid对应的回帖
     public void deleteReplyByrid(int rid){iReplyDaoInterface.deleteReplyByrid(rid);};

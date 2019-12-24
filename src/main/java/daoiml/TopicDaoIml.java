@@ -22,6 +22,8 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
 //    }
 
     public ArrayList<Topic> selectTopicList(){return  null;};
+
+
     @Override
     public Topic selectTopicBytid( int s) {
         SqlSession sqlSession=this.sqlSessionFactory.openSession();

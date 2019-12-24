@@ -1,6 +1,7 @@
 package controller;
 
 import org.apache.commons.io.FileUtils;
+import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -40,7 +41,7 @@ public class ManageController {
     @RequestMapping("/manageTip")
     public String manageTip(HttpServletRequest request) {
         ArrayList<Topic> topics=new ArrayList<Topic>();
-        topics=topicService.getAllT();
+        topics=topicService.selectTopicList();
         System.out.println(topics.get(0).getTid());
         HttpSession session=request.getSession();
         session.setAttribute("topics",topics);
