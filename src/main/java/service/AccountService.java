@@ -2,7 +2,7 @@ package service;
 
 import dao.IAccountdao;
 import org.springframework.beans.factory.annotation.Autowired;
-import test.Account;
+
 import vo.Profile;
 
 import java.util.List;

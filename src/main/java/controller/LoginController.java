@@ -96,7 +96,7 @@ public class LoginController {
         HttpSession session=request.getSession();
         session.setAttribute("AccountId",null);//传入用户id进入session
         //  return "home";
-        return "loginFalse";//退出回xx页面
+        return "login";//退出回xx页面
     }
 
     @RequestMapping("login")
