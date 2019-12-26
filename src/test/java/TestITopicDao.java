@@ -1,7 +1,7 @@
 import com.sun.java.browser.plugin2.liveconnect.v1.BridgeFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import service.AccountService;
-import test.Account;
+
 import vo.*;
 import daoiml.*;
 import org.apache.ibatis.session.SqlSession;

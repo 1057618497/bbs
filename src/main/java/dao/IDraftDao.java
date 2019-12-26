@@ -28,8 +28,13 @@ public interface IDraftDao {
     public int deleteDraftBydid(int did);
 
     //修改草稿
+//<<<<<<< HEAD
     @Update("update draft set save_time=#{save_time},content=#{content},title=#{title} where did=#{did}")
     public int setDraft(Draft d);
+//=======
+//    @Update("update draft save_time=#{save_time},content=#{content},title=#{title} where did=#{did}")
+//    public void setDraft(Draft d);
+//>>>>>>> 5f15f4b0649d336066de2af2d7bcac271c36e352
 
     //通过用户id删除用户的所有草稿
     @Delete("delete from draft where author_id=#{tid}")

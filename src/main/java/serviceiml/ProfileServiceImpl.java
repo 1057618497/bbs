@@ -43,15 +43,36 @@ public class ProfileServiceImpl implements ProfileService {
     }
 
     @Override
+//<<<<<<< HEAD
     public Profile getProfileByuid(int id) {
         return iProfileDao.getProfileBytid(id);
     }
 
     @Override
     public String getnicknameByuid(int id) {
-       Profile p= iProfileDao.getProfileBytid(id);
-       if(p==null)
-           return String.valueOf(p.getId());
-       else return p.getNickname();
+        Profile p = iProfileDao.getProfileBytid(id);
+        if (p == null)
+            return String.valueOf(p.getId());
+        else return p.getNickname();
+    }
+//=======
+    //根据用户id 获得用户个人资料
+    public Profile getAccountInfo(int id) {
+        System.out.println("getAccountInfo service by id is running!");
+        return iProfileDao.getProfileById(id);
+    }
+
+    @Override
+    public void alterProfile(Profile profile) {
+        System.out.println("alterProfile service by id is running!");
+        iProfileDao.alterProfile(profile);
+    }
+
+    //根据用户id 删除用户个人资料
+    @Override
+    public void deleteProfileById(int id) {
+        System.out.println("deleteProfile service by id is running!");
+        iProfileDao.deleteProfile(id);
+//>>>>>>> 5f15f4b0649d336066de2af2d7bcac271c36e352
     }
 }

@@ -27,4 +27,36 @@ public class AccountServiceImpl implements AccountService {
         System.out.println("insertAccount service is running!");
         iaccountdao.insertAccount(account);
     }
+
+    @Override
+    public Account getAdmin(String name) {
+        System.out.println("getAdmin service is running!");
+        return iaccountdao.getAdmin(name);
+    }
+
+    @Override
+    public List<Account> getAllAccount() {
+        System.out.println("getAllAccount service is running!");
+        return iaccountdao.getAllAccount();
+    }
+
+    @Override
+    public Account getAccount(int id) {
+        System.out.println("getAccount by id is running!");
+        return iaccountdao.getAccountById(id);
+    }
+
+    //根据用户id修改用户名和密码
+    @Override
+    public void alterAccount(vo.Account account) {
+        System.out.println("alterAccount by id is running!");
+        iaccountdao.alterAccount(account);
+    }
+
+    //根据用户id删除用户  guan
+    @Override
+    public void deleteAccountById(int id) {
+        System.out.println("deleteAccount by id is running!");
+        iaccountdao.deleteAccountById(id);
+    }
 }

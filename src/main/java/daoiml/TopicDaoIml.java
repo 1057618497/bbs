@@ -1,12 +1,10 @@
 package daoiml;
-import com.sun.java.browser.plugin2.liveconnect.v1.BridgeFactory;
 import dao.IProfileDao;
 import dao.ITopicDao;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Update;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import vo.*;
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
@@ -25,6 +23,7 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
 //    public void setSqlSession(SqlSession sqlSession){
 //        this.sqlSession=sqlSession;
 //    }
+
 
     @Override
     public void updateReply(String time, int tid, int rid) {
@@ -46,6 +45,7 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
     public ArrayList<Topic> selectTopicList() {
         return null;
     }
+
 
     @Override
     public Topic selectTopicBytid( int s) {
@@ -142,10 +142,12 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
     }
 
     @Override
-    public ArrayList<Topic> selectByid(int id) {
+    //返回用户Id对应所有主帖
+    public ArrayList<Topic> TselectByid(int id) {
         return null;
     }
 
+//<<<<<<< HEAD
     @Override
     public int deleteTopicBytid(int tid) {
         return 0;
@@ -162,7 +164,8 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
     }
 
     String getkicnname(int id){
-        Profile profile=iProfileDao.getProfileBytid(id);
+//        Profile profile=iProfileDao.getProfileBytid(id);
+        Profile profile=iProfileDao.getProfileById(id);
 
         if(profile==null)
         return String.valueOf(id);
@@ -170,5 +173,34 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
             return profile.getNickname();
     }
 
+//=======
+    //返回用户ID对应的所有回帖
+    public ArrayList<Topic> selectByid(int id){return null;};
+
+    //获得所有帖子
+    @Override
+    public ArrayList<Topic> SelectAllT(){return null;}
+
+    //删除rid对应的回帖
+    public void deleteReplyByrid(int rid){};
+
+    //删除用户所有回帖
+    public void deleteAllR(int id){};
+
+    //删除用户所有主贴
+    public void deleteAllT(int id){};
+
+    //设置加精
+    public void updatejing(int jing,int Tid){};
+
+    //设置置顶
+    public void updateadd_top(int add_top,int Tid){};
+
+    //删除tid对应的所有主贴和回帖
+    public  void deleteAllBytid(int Tid){};
+
+    //返回tid对应的所有回帖列表
+    public ArrayList<Reply> selectByTid(int id){return null;};
+//>>>>>>> 5f15f4b0649d336066de2af2d7bcac271c36e352
 
 }

@@ -22,6 +22,7 @@
     <link rel="stylesheet" type="text/css" href="/bbs/css/style_1_common.css" >
     <link rel="stylesheet" type="text/css" href="/bbs/css/style_1_forum_forumdisplay.css">
 
+    <title>论坛主页</title>
     <script src="js/common.js" type="text/javascript"></script>
     <meta name="application-name" content="Discuz! 官方站">
     <meta name="msapplication-tooltip" content="Discuz! 官方站">
@@ -120,7 +121,7 @@
 
                         <span class="pipe">|</span><a href="myView" id="myitem" class="showmenu"
                     >我的帖子</a>
-                        <span class="pipe">|</span><a href="home.php?mod=spacecp">设置</a>
+                        <span class="pipe">|</span><a href="/bbs/viewAccountInfo">设置</a>
 
 
                         <span class="pipe">|</span><a href="./account/exit">退出</a>

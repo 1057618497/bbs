@@ -10,9 +10,9 @@ import java.util.List;
 @Repository  //此注解代表这是一个持久层，用法类似@controller、@service
 
 public interface IProfileDao {
-    //用户id 拿到用户信息
+
     @Select("select * from account_info where id=#{id}")
-    public Profile getProfileBytid(int id);
+    public Profile getProfileById(int id);
 
     //用户发帖 积分+5
     @Update("update account_info set points=points+5 where id=#{tid}")
@@ -38,12 +38,18 @@ public interface IProfileDao {
     @Delete("delete from account_info where id=#{id}")
     public void deleteProfile(int id);
 
-//    //添加profile
-//    @Insert("insert into account_info values(#{id},#{telephone},#{qq},#{job},#{sex},#{points},#{nickname})")
-//    public int insertProfile(Profile p);
+    //添加profile
+    @Insert("insert into account_info values(#{id},#{telephone},#{qq},#{job},#{sex},#{points},#{nickname})")
+    public int insertProfile(Profile p);
 
-    //添加用户信息 guan
-    @Insert("insert into account_info values (#{id},#{telephone},#{qq},#{job},#{sex},#{points},#{nickname})")
-    public void insertProfile(Profile profile);
+ //   //添加用户信息 guan
+ //   @Insert("insert into account_info values (#{id},#{telephone},#{qq},#{job},#{sex},#{points},#{nickname})")
+  //  public void insertProfile(Profile profile);
 
+    //根据用户id修改个人资料 guan
+    @Update("update account_info set telephone=#{telephone},qq=#{qq},job=#{job},sex=#{sex},points=#{points},nickname=#{nickname} where id=#{id}")
+    public void alterProfile(Profile profile);
+
+    @Select("select * from account_info where id=#{id}")
+    Profile getProfileBytid(int id);
 }

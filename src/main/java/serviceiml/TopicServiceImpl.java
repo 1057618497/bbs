@@ -17,6 +17,7 @@ public class TopicServiceImpl implements TopicService {
     @Autowired
     IReplyDao iReplyDao;
 
+
     @Qualifier("TopicDaoIml")
     @Autowired
     ITopicDao iTopicDao;
@@ -25,6 +26,7 @@ public class TopicServiceImpl implements TopicService {
     @Autowired
     ITopicDao iTopicDaoInterface;
 
+//<<<<<<< HEAD
     @Autowired
     IDraftDao iDraftDao;
 
@@ -71,6 +73,11 @@ public class TopicServiceImpl implements TopicService {
     public void updateClickNum(int tid) {
         iTopicDaoInterface.updateClickNum(tid);
     }
+//=======
+    @Qualifier("IReplyDao")
+    @Autowired
+    IReplyDao iReplyDaoInterface;
+//>>>>>>> 5f15f4b0649d336066de2af2d7bcac271c36e352
 
     //发新帖
     @Override
@@ -108,6 +115,7 @@ public class TopicServiceImpl implements TopicService {
         return iReplyDao.selectByTid(id);
     }
 
+//<<<<<<< HEAD
     @Override
     public ArrayList<Reply> getReListByid(int id) {
         ArrayList<Reply> list=iReplyDao.selectByid(id);
@@ -191,4 +199,36 @@ public class TopicServiceImpl implements TopicService {
     public void deleteReplyBytid(int tid) {
         iReplyDao.deleteTopicBytid(tid);
     }
+//=======
+    //获取所有帖子
+    @Override
+    public ArrayList<Topic> selectTopicList(){return iTopicDaoInterface.selectTopicList();}
+
+    //删除rid对应的回帖
+    public void deleteReplyByrid(int rid){iReplyDaoInterface.deleteReplyByrid(rid);};
+
+    //返回用户Id对应的所有主贴
+    public ArrayList<Topic> TselectByid(int id){return iTopicDaoInterface.TselectByid(id);};
+
+    //返回用户Id对应的所有回帖
+    public ArrayList<Reply> selectByid(int id){return  iReplyDaoInterface.selectByid(id);};
+
+    //删除用户所有主贴
+    public void deleteAllT(int id){iTopicDaoInterface.deleteAllT(id);};
+
+    //删除用户id对应的所有回帖
+    public void deleteAllR(int id){iReplyDaoInterface.deleteAllR(id);};
+
+    //加精操作
+    public void updatejing(int jing,int Tid){iTopicDaoInterface.updatejing(jing,Tid);};
+
+    //置顶操作
+    public void updateadd_top(int add_top,int Tid){iTopicDaoInterface.updateadd_top(add_top,Tid);};
+
+    //删除tid对应的所有主贴和回帖
+    public  void deleteAllBytid(int Tid){iTopicDaoInterface.deleteAllBytid(Tid);};
+
+    //返回tid对应的所有回帖列表
+    public ArrayList<Reply> selectByTid(int id){return  iReplyDaoInterface.selectByTid(id);};
+//>>>>>>> 5f15f4b0649d336066de2af2d7bcac271c36e352
 }

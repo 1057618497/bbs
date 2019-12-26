@@ -1,4 +1,4 @@
-import dao.IAccountdao;
+/*import dao.IAccountdao;
 import dao.IProfileDao;
 import dao.IReplyDao;
 import org.junit.runner.RunWith;
@@ -46,11 +46,15 @@ public class TestDao extends BaseJunit4Test{
         p.setPoints(0);
         p.setNickname("happyaaa");
         //int i=iProfileDao.insertProfile(p);
+<<<<<<< HEAD
        // System.out.println(p.toString()+"i="+i);
+=======
+        //System.out.println(p.toString()+"i="+i);
+>>>>>>> 5f15f4b0649d336066de2af2d7bcac271c36e352
     }
     @Test
     public void testgetProfileBytid(){
-        Profile p=iProfileDao.getProfileBytid(1);
+        Profile p=iProfileDao.getProfileById(1);
         System.out.println(p);
     }
 
@@ -74,9 +78,15 @@ public class TestDao extends BaseJunit4Test{
         acc.setPassword("123");
         acc.setName("hello1");
         // IAccountdao iAccountdao=(IAccountdao)ac.getBean("IAccountdao");
+<<<<<<< HEAD
        // int i=iAccountdao.insertAccount(acc);
        // Account b=iAccountdao.getAccount(acc.getName());
        // System.out.println(b.toString()+"i="+i);
+=======
+        //int i=iAccountdao.insertAccount(acc);
+        Account b=iAccountdao.getAccount(acc.getName());
+        System.out.println(b.toString()+"i="+i);
+>>>>>>> 5f15f4b0649d336066de2af2d7bcac271c36e352
     }
 
     @Test
@@ -101,3 +111,4 @@ public class TestDao extends BaseJunit4Test{
         }
     }
 }
+*/
