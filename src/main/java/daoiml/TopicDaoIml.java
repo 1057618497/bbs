@@ -21,6 +21,8 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
 //        this.sqlSession=sqlSession;
 //    }
 
+    public ArrayList<Topic> selectTopicList(){return  null;};
+
 
     @Override
     public Topic selectTopicBytid( int s) {
@@ -98,7 +100,37 @@ public class TopicDaoIml extends SqlSessionDaoSupport implements ITopicDao{
     }
 
     @Override
-    public ArrayList<Topic> selectByid(int id) {
+    //返回用户Id对应所有主帖
+    public ArrayList<Topic> TselectByid(int id) {
         return null;
     }
+
+    //返回用户ID对应的所有回帖
+    public ArrayList<Reply> selectByid(int id){return null;};
+
+    //获得所有帖子
+    @Override
+    public ArrayList<Topic> SelectAllT(){return null;}
+
+    //删除rid对应的回帖
+    public void deleteReplyByrid(int rid){};
+
+    //删除用户所有回帖
+    public void deleteAllR(int id){};
+
+    //删除用户所有主贴
+    public void deleteAllT(int id){};
+
+    //设置加精
+    public void updatejing(int jing,int Tid){};
+
+    //设置置顶
+    public void updateadd_top(int add_top,int Tid){};
+
+    //删除tid对应的所有主贴和回帖
+    public  void deleteAllBytid(int Tid){};
+
+    //返回tid对应的所有回帖列表
+    public ArrayList<Reply> selectByTid(int id){return null;};
+
 }

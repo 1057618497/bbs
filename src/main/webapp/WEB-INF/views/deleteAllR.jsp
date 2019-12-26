@@ -9,29 +9,8 @@
 <html>
 <head>
     <title>删除所有回帖</title>
-
-    <style>
-        *{padding: 0px;
-            margin: 0px;}
-        .header{
-            width:100%;
-            height:200px;
-            background:url("http://localhost:8080/bbs/images/timg.jpg");
-            background-size:cover;
-        }
-        .headertext{
-            font-size:50px; font-family:'微软雅黑'; text-align: center;
-        }
-        .thistable{
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
-<div class="header">
-    <img src="images/ncu.png"  height="80" width="80" border="0">
-    <h3 class="headertext">管 理 员 界 面</h3>
-</div>
 <%
     int id=(int)session.getAttribute("id");
 %>
