@@ -7,47 +7,21 @@
     <link rel="stylesheet" type="text/css" href="/bbs/css/login.css"/>
     <script type="text/javascript" src="/bbs/js/login.js"></script>
     <style>
-        #btn_login {
-            font-size: 14px;
-            font-family: 宋体;
-            width: 100px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            color: white;
-            background-color: #3BD9FF;
-            border-radius: 6px;
-            border: 0;
-            float: left;
-        }
-        #btn_clear {
-            font-size: 14px;
-            font-family: 宋体;
-            width: 100px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            color: white;
-            background-color: #3BD9FF;
-            border-radius: 6px;
-            border: 0;
-            margin-left: 10px;
-            float: left;
-        }
+        #btn_login {width: 100px;}
+        #btn_clear {width: 100px;}
     </style>
 </head>
 <body>
 <div id="login_frame">
 
     <form method="post" action="/bbs/checkLogin">
-
         <p><label class="label_input">用户名</label><input type="text" name="username" class="text_field"/></p>
         <p><label class="label_input">密码</label><input type="password" name="password" class="text_field"/></p>
         <%
             if(session.getAttribute("ERROR")!=null) {
                 String error = (String) session.getAttribute("ERROR");
         %>
-        <p><label>错误提示：<%=error%></label></p>
+        <script>alert("<%=error%>");</script>
         <%
                 session.setAttribute("ERROR",null);
             }

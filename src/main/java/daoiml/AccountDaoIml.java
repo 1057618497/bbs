@@ -21,11 +21,9 @@ public class AccountDaoIml extends SqlSessionDaoSupport implements IAccountdao {
     }
 
     @Override
-    public int insertAccount(Account a) {
-        return 0;
-   }
+    public int insertAccount(Account a) {return 0;}
 
-  //  public void insertAccount(Account a){ }
+  // public void insertAccount(Account a){ }
 
     @Override
     public Account getAdmin(String name) {

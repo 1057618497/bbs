@@ -9,9 +9,22 @@
 <html>
 <head>
     <title>查看个人资料</title>
+    <style>
+        table{margin: 0 auto;border: blue 1px solid;}
+    </style>
 </head>
 <body>
-<% Profile profile=(Profile) session.getAttribute("alterProfile"); %>
+<%
+    if(session.getAttribute("Prompt")!=null) {
+        String prompt = (String) session.getAttribute("Prompt");
+%>
+<script type="text/javascript" language="javascript">
+    alert("<%=prompt%>");                                            // 弹出错误信息
+</script>
+<%
+        session.setAttribute("Prompt",null);
+    }
+    Profile profile=(Profile) session.getAttribute("alterProfile"); %>
 <form method="post" action="./alterAccountInfo">
     <table>
         <tr>

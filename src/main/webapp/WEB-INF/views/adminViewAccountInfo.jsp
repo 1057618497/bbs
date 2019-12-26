@@ -15,11 +15,13 @@
     <link rel="stylesheet" type="text/css" href="/bbs/css/style_8_forum_index.css">
     <link media="all" href="/bbs/css/style.css" type="text/css" rel="stylesheet">
     <style>
-        table{margin:0 auto;}
-        .td1{text-align: center;}
+        table{margin:0 auto;color: black;}
+        .td1{text-align: center;color: black;}
         .input1{margin: 0 10px;}
-        p{text-align: center}
+        p{text-align: center;}
         .div1{text-align: center;}
+        .div2{color: black;background-color: white;}
+        input{color: black;}
     </style>
 </head>
 <body>
@@ -27,7 +29,8 @@
 <!-- head -->
 <div id="hd">  <!-- head的style，需要改背景图片 -->
 
-    <%  Account account=(Account) session.getAttribute("adminAccount");
+    <%
+        Account account=(Account) session.getAttribute("adminAccount");
         if(account==null){%>
     <form method="post" autocomplete="off" id="lsform" action="/bbs/checkAdminLogin">
         <div class="fastlg cl"> <!-- 支撑head区域  -->
@@ -71,49 +74,59 @@
     Account account1=(Account)session.getAttribute("Account");
     if(account1==null){
 %>
-<p>查询失败，该用户不存在！</p>
+<div class="div2"><p>查询失败，该用户不存在！</p></div>
 <%
     }else{
+        if(session.getAttribute("Prompt")!=null) {
+            String prompt = (String) session.getAttribute("Prompt");
+%>
+<script type="text/javascript" language="javascript">
+    alert("<%=prompt%>");     // 弹出提示信息
+</script>
+<%
+        session.setAttribute("Prompt",null);
+    }
         Profile profile=(Profile)session.getAttribute("Profile");
 %>
-<form method="post" action="<%="./adminEditProfile?id="+account1.getId() %>">
-    <table>
-        <tr>
-            <td>用户id:</td><td><label><%=account1.getId()%></label></td>
-        </tr>
-        <tr>
-            <td>用户名:</td><td><input type="text" name="name" value="<%=account1.getName()%>"/></td>
-        </tr>
-        <tr>
-            <td>密码:</td><td><input type="text" name="password" value="<%=account1.getPassword()%>"/></td>
-        </tr>
-        <tr>
-            <td>昵称:</td><td><input type="text" name="nickname" value="<%=profile.getNickname()%>"/></td>
-        </tr>
-        <tr>
-            <td>电话:</td><td><input type="text" name="telephone" value="<%=profile.getTelephone()%>"/></td>
-        </tr>
-        <tr>
-            <td>QQ:</td><td><input type="text" name="qq" value="<%=profile.getQq()%>"/></td>
-        </tr>
-        <tr>
-            <td>工作:</td><td><input type="text" name="job" value="<%=profile.getJob()%>"/></td>
-        </tr>
-        <tr>
-            <td>性别:</td>
-            <td>
-                <input type="radio" name="sex" value="1" <% if(profile.getSex()==1){ %> checked <%}%> />男
-                <input type="radio" name="sex" value="0" <% if(profile.getSex()==0){ %> checked <%}%> />女
-            </td>
-        </tr>
-        <tr>
-            <td>积分:</td><td><input type="text" name="points" value="<%=profile.getPoints()%>"/></td>
-        </tr>
-        <tr>
-            <td class="td1" colspan=2><input class="input1" type="submit" value="修改"/><input class="input1" type="reset" value="重置"/></td>
-        </tr>
-    </table>
-</form>
+<div class="div2">
+    <form method="post" action="<%="./adminEditProfile?id="+account1.getId() %>">
+        <table>
+            <tr>
+                <td>用户id:</td><td><label><%=account1.getId()%></label></td>
+            </tr>
+            <tr>
+                <td>用户名:</td><td><input type="text" name="name" value="<%=account1.getName()%>"/></td>
+            </tr>
+            <tr>
+                <td>密码:</td><td><input type="text" name="password" value="<%=account1.getPassword()%>"/></td>
+            </tr>
+            <tr>
+                <td>昵称:</td><td><input type="text" name="nickname" value="<%=profile.getNickname()%>"/></td>
+            </tr>
+            <tr>
+                <td>电话:</td><td><input type="text" name="telephone" value="<%=profile.getTelephone()%>"/></td>
+            </tr>
+            <tr>
+                <td>QQ:</td><td><input type="text" name="qq" value="<%=profile.getQq()%>"/></td>
+            </tr>
+            <tr>
+                <td>工作:</td><td><input type="text" name="job" value="<%=profile.getJob()%>"/></td>
+            </tr>
+            <tr>
+                <td>性别:</td>
+                <td>
+                    <input type="radio" name="sex" value="1" <% if(profile.getSex()==1){ %> checked <%}%> />男
+                    <input type="radio" name="sex" value="0" <% if(profile.getSex()==0){ %> checked <%}%> />女
+                </td>
+            </tr>
+            <tr>
+                <td>积分:</td><td><input type="text" name="points" value="<%=profile.getPoints()%>"/></td>
+            </tr>
+            <tr>
+                <td class="td1" colspan=2><input class="input1" type="submit" value="修改"/><input class="input1" type="reset" value="重置"/></td>
+            </tr>
+        </table>
+    </form>
 <br>
 <p><a href="<%="./adminDeleteAccount?id="+account1.getId() %>">删除该用户</a></p><br>
 <%
@@ -122,7 +135,7 @@
     session.setAttribute("Profile",null);//将account清空
 %>
 <p><a href="./accountManage">返回用户管理页面</a></p>
-
+</div>
 <!--页脚-->
 <div id="ft">
     <div class="div1">  <!-- 页脚居中 -->

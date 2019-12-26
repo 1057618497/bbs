@@ -35,7 +35,7 @@ public class LoginController {
 
         HttpSession session=request.getSession();
         if(account==null) {
-            String error="用户名不存在";
+            String error="错误提示：用户名不存在";
             session.setAttribute("ERROR",error);
             return "login";//登陆失败，转跳回登录页面
         }
@@ -44,7 +44,7 @@ public class LoginController {
             System.out.println("用户id"+account.getId() +"已经进入session");
             return "home";//登录成功,前往主页
         } else {
-            String error="密码错误";
+            String error="错误提示：密码错误";
             session.setAttribute("ERROR",error);
             return "login";//登陆失败，转跳回登录页面
         }
@@ -67,7 +67,7 @@ public class LoginController {
         String name = request.getParameter("username");
         String password = request.getParameter("password");
         if(name=="" || password==""){
-            String error="用户名和密码不能为空！";
+            String error="错误提示：用户名和密码不能为空！";
             session.setAttribute("ERROR",error);
             return "signUp";//失败，转跳回注册页面
         }
@@ -79,10 +79,10 @@ public class LoginController {
         Account account1 = accountService.getAccount(name);
         System.out.println("checkSignUp is running");
         if(account1!=null){//存在
-            String error="该用户名已经存在！";
+            String error="错误提示：该用户名已经存在！";
             session.setAttribute("ERROR",error);
             return "signUp";//失败，转跳回注册页面
-        }else {
+        }else{
             Profile profile = new Profile();
             accountService.insertAccount(account);//添加用户表
             account1 = accountService.getAccount(name);
@@ -133,7 +133,7 @@ public class LoginController {
         System.out.println("checkAdminLogin is running");
         HttpSession session = request.getSession();
         if (account == null) {
-            String error = "用户名不存在";
+            String error = "错误提示：用户名不存在";
             session.setAttribute("ERROR", error);
             return "adminLogin";//登陆失败，转跳回登录页面
         }
@@ -142,7 +142,7 @@ public class LoginController {
             System.out.println("用户" + account.getName() + "已经进入session");
             return "adminHome";//登录成功,前往主页
         } else {
-            String error = "密码错误";
+            String error = "错误提示：密码错误";
             session.setAttribute("ERROR", error);
             return "adminLogin";//登陆失败，转跳回登录页面
         }
@@ -242,6 +242,8 @@ public class LoginController {
 
         session.setAttribute("Account",account);
         session.setAttribute("Profile",profile);
+        String prompt="修改成功！";//提示信息
+        session.setAttribute("Prompt",prompt);
         return "adminViewAccountInfo";
     }
 
@@ -315,6 +317,8 @@ public class LoginController {
       //  profile=profileService.getAccountInfo(id);
         session.setAttribute("alterPasswordAccount",account);
       //  session.setAttribute("Profile",profile);
+        String prompt="修改成功！";//提示信息
+        session.setAttribute("Prompt",prompt);
         return "alterPassword";
     }
 
@@ -367,6 +371,8 @@ public class LoginController {
         profile=profileService.getAccountInfo(id);
      //   session.setAttribute("Account",account);
         session.setAttribute("alterProfile",profile);
+        String prompt="修改成功！";//提示信息
+        session.setAttribute("Prompt",prompt);
         return "viewAccountInfo";
     }
 

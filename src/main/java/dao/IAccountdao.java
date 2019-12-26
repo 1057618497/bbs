@@ -16,7 +16,6 @@ public interface IAccountdao {
 //    @Insert("insert into account (id,name,money) values(#{id},#{name},#{money})")
 //    public void saveAccount(test.Account account);
 
-
 //    //用户名找账户   找不到返回null
 //   @Select("select * from account where name= #{name}")
 //    public Account getAccount(String name);

@@ -12,6 +12,10 @@
     <title>管理员登录页面</title>
     <link rel="stylesheet" type="text/css" href="/bbs/css/login.css"/>
     <script type="text/javascript" src="/bbs/js/login.js"></script>
+    <style>
+        #btn_login {width: 150px}
+        #btn_clear {width: 150px;}
+    </style>
 </head>
 <body>
 <div id="login_frame">
@@ -24,7 +28,9 @@
             if(session.getAttribute("ERROR")!=null) {
                 String error = (String) session.getAttribute("ERROR");
         %>
-        <p><label>错误提示：<%=error%></label></p>
+        <script type="text/javascript" language="javascript">
+            alert("<%=error%>");                                            // 弹出错误信息
+        </script>
         <%
                 session.setAttribute("ERROR",null);
             }

@@ -8,32 +8,44 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <meta http-equiv="Content-Type"; content="multipart/form-data; charset=utf-8"/>
+    <meta charset="UTF-8">
     <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="/bbs/css/login.css"/>
+    <script type="text/javascript" src="/bbs/js/login.js"></script>
+    <style>
+        #btn_login {width: 100px;}
+        #btn_clear {width: 100px;}
+        login_frame{height: 300px}
+        #login_frame{text-align: left;height: 360px;width: 380px}
+    </style>
 </head>
 <body>
-<form method="post" action="/bbs/checkSignUp">
-
-    用户名<input type="text" name="username"/><br>
-    密码<input type="text" name="password" /><br>
-    昵称<input type="text" name="nickname"/><br>
-    电话号码<input type="text" name="telephone"/><br>
-    qq<input type="text" name="qq"/><br>
-    工作<input type="text" name="job"/><br>
-    性别<input type="radio" name="sex" value="1" checked/>男
-    <input type="radio" name="sex" value="0"/>女<br>
-    <%
-        if(session.getAttribute("ERROR")!=null) {
-            String error = (String) session.getAttribute("ERROR");
-    %>
-    <p><label>错误提示：<%=error%></label></p>
-    <%
-            session.setAttribute("ERROR",null);
-        }
-    %>
-        <input type="submit" value="注册"/>
-        <input type = "reset" value="清空"/>
-</form>
-
-<a href="/bbs/account/login">返回登录</a>
+<div id="login_frame">
+    <form method="post" action="/bbs/checkSignUp">
+        <p><label class="label_input">用户名</label><input type="text" name="username" class="text_field"/></p>
+        <p><label class="label_input">密码</label><input type="password" name="password" class="text_field"/></p>
+        <p><label class="label_input">昵称</label><input type="text" name="nickname" class="text_field"/></p>
+        <p><label class="label_input">电话号码</label><input type="text" name="telephone" class="text_field"/></p>
+        <p><label class="label_input">QQ</label><input type="text" name="qq" class="text_field"/></p>
+        <p><label class="label_input">工作</label><input type="text" name="job" class="text_field"/></p>
+        <p><label class="label_input">性别</label><input type="radio" name="sex" value="1" checked/>男
+            <input type="radio" name="sex" value="0"/>女</p>
+        <%
+            if(session.getAttribute("ERROR")!=null) {
+                String error = (String) session.getAttribute("ERROR");
+        %>
+        <script>alert("<%=error%>");</script>
+        <%
+                session.setAttribute("ERROR",null);
+            }
+        %>
+        <div id="login_control">
+            <button type="submit" id="btn_login">注册</button>
+            <button type="reset" id="btn_clear" >清空</button>
+            <label id="btn_clear"><a href="/bbs/account/login">登录</a></label>
+        </div>
+    </form>
+</div>
 </body>
 </html>

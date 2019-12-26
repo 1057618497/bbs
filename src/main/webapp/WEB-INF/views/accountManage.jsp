@@ -94,7 +94,9 @@
               for(int i=0;i<accounts.size();i++){
                 account=accounts.get(i);
         %>
-        <li class="topRank"><em><%=account.getId()%></em>&nbsp;&nbsp;<a href="<%="./adminViewAccountInfo?id="+account.getId()%>" title="<%=account.getName()%>" c="1"><%=account.getName()%></a></li>
+        <li class="topRank">
+            <em><%=account.getId()%></em>&nbsp;&nbsp;<a href="<%="./adminViewAccountInfo?id="+account.getId()%>" title="<%=account.getName()%>" c="1"><%=account.getName()%></a>
+        </li>
         <%
             }
         %>
